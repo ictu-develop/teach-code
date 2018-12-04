@@ -60,10 +60,18 @@ if( !function_exists( 'my_vcard_resume_theme_vcard_profile' ) ):
             <?php
             if (is_user_logged_in()){
                 echo '<p class="display-name">'.htmlspecialchars($_COOKIE['username']).'</p>';
-                echo '<p class="a-login-logout"><a href="wp-login.php?action=logout">Logout</a></p>';
+                echo '<p class="a-login-logout"><a href="http://localhost/web-teach-code/blog/wp-login.php?action=logout">Logout</a></p>';
 
             } else{
-               echo '<p class="a-login-logout"><a href="wp-login.php">Login</a></p>';
+                echo '<style>
+                        .a-login-logout {
+                        
+                            font-size: 13px;
+                            position: initial;
+                            margin-top: -5px;
+                        }
+                        </style>';
+               echo '<p class="a-login-logout"><a href="http://localhost/web-teach-code/blog/wp-login.php">Login</a></p>';
             }
             ?></div>
         <?php //$description = get_bloginfo( 'description', 'display' );

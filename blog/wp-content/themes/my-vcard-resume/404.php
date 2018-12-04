@@ -1,4 +1,26 @@
 <?php
+echo '<style>
+#wpadminbar{
+display: none;
+}
+</style>';
+
+echo'<style>
+.page{
+top: 0px;
+}
+</style>';
+
+echo '<style>
+                .page-entry-title-wrp{
+                    display: none;
+                }
+                .card-inner .card-wrap{
+                    padding: 0px 30px 30px 60px;
+                }
+            </style>';
+/**
+
 /**
  * The template for displaying 404 pages (not found)
  *
@@ -26,7 +48,7 @@ do_action( 'my_vcard_resume_theme_page_wrp_start' );
         */
         do_action( 'my_vcard_resume_title_in_custom_header' );
         ?>
-         <div class="row border-line-v">
+         <div class="row">
         	 <article class="col col-d-12 col-t-12 col-m-12 border-line-h after-none">
        			<div class="post-box box-item">
                 
