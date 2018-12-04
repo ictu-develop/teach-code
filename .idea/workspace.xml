@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7bfa8270-58c6-4169-a4a0-8f1c41419a46" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="7bfa8270-58c6-4169-a4a0-8f1c41419a46" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +22,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/assets/layout.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="490">
-              <caret line="601" selection-start-line="601" selection-end-line="601" />
+            <state relative-caret-position="108">
+              <caret line="369" column="11" selection-start-line="369" selection-start-column="11" selection-end-line="369" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -42,8 +40,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/inc/theme-layout-hook.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="65" column="56" lean-forward="true" selection-start-line="65" selection-start-column="56" selection-end-line="65" selection-end-column="56" />
+            <state relative-caret-position="138">
+              <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
             </state>
           </provider>
         </entry>
@@ -98,7 +96,6 @@
         <option value="$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/template-parts/content-search.php" />
         <option value="$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/template-parts/content.php" />
         <option value="$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/template-parts/content-single.php" />
-        <option value="$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/assets/layout.css" />
         <option value="$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/inc/post-hooks.php" />
         <option value="$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/comments.php" />
         <option value="$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/inc/function-hook.php" />
@@ -111,6 +108,7 @@
         <option value="$PROJECT_DIR$/blog/wp-includes/pluggable.php" />
         <option value="$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/assets/common.css" />
         <option value="$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/inc/theme-layout-hook.php" />
+        <option value="$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/assets/layout.css" />
       </list>
     </option>
   </component>
@@ -166,7 +164,7 @@
               <item name="wp-content" type="462c0819:PsiDirectoryNode" />
               <item name="themes" type="462c0819:PsiDirectoryNode" />
               <item name="my-vcard-resume" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="inc" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="web-teach-code" type="b2602c69:ProjectViewProjectNode" />
@@ -175,7 +173,7 @@
               <item name="wp-content" type="462c0819:PsiDirectoryNode" />
               <item name="themes" type="462c0819:PsiDirectoryNode" />
               <item name="my-vcard-resume" type="462c0819:PsiDirectoryNode" />
-              <item name="inc" type="462c0819:PsiDirectoryNode" />
+              <item name="vendors" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="web-teach-code" type="b2602c69:ProjectViewProjectNode" />
@@ -228,17 +226,17 @@
       <workItem from="1543778498701" duration="13453000" />
       <workItem from="1543793319808" duration="1221000" />
       <workItem from="1543825049066" duration="8359000" />
-      <workItem from="1543909839081" duration="18280000" />
+      <workItem from="1543909839081" duration="18566000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42261000" />
+    <option name="totallyTimeSpent" value="42547000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="10" y="62" width="1346" height="686" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2653846" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2653846" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -251,7 +249,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3297491" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3297491" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -474,13 +472,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog/wp-login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11">
-          <caret line="868" column="6" lean-forward="true" selection-start-line="868" selection-start-column="6" selection-end-line="868" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/assets/common.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="539">
@@ -488,17 +479,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/blog/wp-login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11">
+          <caret line="868" column="6" lean-forward="true" selection-start-line="868" selection-start-column="6" selection-end-line="868" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/inc/theme-layout-hook.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="65" column="56" lean-forward="true" selection-start-line="65" selection-start-column="56" selection-end-line="65" selection-end-column="56" />
+        <state relative-caret-position="138">
+          <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/assets/layout.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="601" selection-start-line="601" selection-end-line="601" />
+        <state relative-caret-position="108">
+          <caret line="369" column="11" selection-start-line="369" selection-start-column="11" selection-end-line="369" selection-end-column="11" />
         </state>
       </provider>
     </entry>
