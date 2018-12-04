@@ -42,7 +42,6 @@ if( !function_exists( 'my_vcard_resume_theme_vcard_profile' ) ):
 	function my_vcard_resume_theme_vcard_profile(){
 	?>
     <div class="card-started" id="home-card">
-    <div class="profile">
         <div class="slide" style="background-image: url(<?php echo esc_url( get_header_image() ); ?>);"></div>
     	<div class="image">
         <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
@@ -61,13 +60,11 @@ if( !function_exists( 'my_vcard_resume_theme_vcard_profile' ) ):
             if (is_user_logged_in()){
                 echo '<p class="display-name">'.htmlspecialchars($_COOKIE['username']).'</p>';
                 echo '<p class="a-login-logout"><a href="http://localhost/web-teach-code/blog/wp-login.php?action=logout">Logout</a></p>';
-
             } else{
                 echo '<style>
                         .a-login-logout {
-                        
                             font-size: 13px;
-                            position: initial;
+                            position: relative;
                             margin-top: -5px;
                         }
                         </style>';
@@ -127,7 +124,6 @@ if( !function_exists( 'my_vcard_resume_theme_vcard_profile' ) ):
             <?php endif;?>
         </div>
 
-    </div>
     </div>
      <?php
 	}
