@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test api</title>
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+        textarea{
+            width: 800px;
+            height: 400px;
+        }
+        .de-bai{
+            float: left;
+            width: 400px;
+            height: 500px;
+        }
+        main{
+            float: left;
+            width: 900px;
+            height: 500px;
+        }
+        code {
+            display: block;
+            white-space: pre-wrap
+        }
+    </style>
+</head>
+<body>
+    <div class="de-bai">
+        <h4>Đề bài: tính tổng 2 số nguyên dương:</h4>
+        <p>Ví dụ:</p>
+        <p>
+            input:<br>
+            2 3<br>
+            output:<br>
+            5
+            </p>
+    </div>
+
+    <main>
+        <form method="post" action="Submit.php">
+
+            <label>Code here</label><br>
+            <textarea name="source" required>#include <stdio.h>
+
+int main(void) {
+
+  printf("Hello");
+  return 0;
+}
+            </textarea><br>
+            <button>Submit</button>
+
+        </form>
+
+    </main>
+
+</body>
+</html>
+
+<script type="text/javascript">
+
+    function stopRKey(evt) {
+        var evt = (evt) ? evt : ((event) ? event : null);
+        var node = (evt.target) ? evt.target : ((evt.srcElement) ? evt.srcElement : null);
+        if ((evt.keyCode == 13) && (node.type=="text"))  {return false;}
+    }
+
+    document.onkeypress = stopRKey;
+
+</script>
