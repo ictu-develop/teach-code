@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7bfa8270-58c6-4169-a4a0-8f1c41419a46" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/assets/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/assets/common.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/assets/layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/assets/layout.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/inc/theme-layout-hook.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/inc/theme-layout-hook.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/wp-login.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/wp-login.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,11 +22,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/assets/layout.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="58" column="12" selection-start-line="58" selection-start-column="12" selection-end-line="58" selection-end-column="12" />
+            <state relative-caret-position="90">
+              <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/blog/wp-login.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="537" column="60" selection-start-line="537" selection-start-column="60" selection-end-line="537" selection-end-column="60" />
             </state>
           </provider>
         </entry>
@@ -67,15 +75,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="109">
               <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/archive.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" selection-start-line="2" selection-end-line="13" />
             </state>
           </provider>
         </entry>
@@ -132,7 +131,6 @@
       <find>password</find>
       <find>log</find>
       <find>username</find>
-      <find>logout</find>
       <find>wp_logout</find>
       <find>wp_clear_auth_cookie</find>
       <find>setcookie</find>
@@ -145,8 +143,9 @@
       <find>min-w</find>
       <find>max-width: 1072px</find>
       <find>max-width: 1023px</find>
-      <find>.a-login-logout</find>
       <find>card-started</find>
+      <find>.a-login-logout</find>
+      <find>logout</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -174,12 +173,12 @@
         <option value="$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/archive.php" />
         <option value="$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/page.php" />
         <option value="$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/search.php" />
-        <option value="$PROJECT_DIR$/blog/wp-login.php" />
         <option value="$PROJECT_DIR$/blog/wp-includes/pluggable.php" />
         <option value="$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/404.php" />
         <option value="$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/assets/common.css" />
         <option value="$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/inc/theme-layout-hook.php" />
         <option value="$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/assets/layout.css" />
+        <option value="$PROJECT_DIR$/blog/wp-login.php" />
       </list>
     </option>
   </component>
@@ -297,12 +296,12 @@
       <workItem from="1543778498701" duration="13453000" />
       <workItem from="1543793319808" duration="1221000" />
       <workItem from="1543825049066" duration="8359000" />
-      <workItem from="1543909839081" duration="26663000" />
+      <workItem from="1543909839081" duration="27458000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50644000" />
+    <option name="totallyTimeSpent" value="51439000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="10" y="62" width="1346" height="686" extended-state="0" />
@@ -496,13 +495,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog/wp-login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11">
-          <caret line="868" column="6" lean-forward="true" selection-start-line="868" selection-start-column="6" selection-end-line="868" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/archive.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -571,8 +563,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/assets/layout.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="58" column="12" selection-start-line="58" selection-start-column="12" selection-end-line="58" selection-end-column="12" />
+        <state relative-caret-position="90">
+          <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/wp-login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="537" column="60" selection-start-line="537" selection-start-column="60" selection-end-line="537" selection-end-column="60" />
         </state>
       </provider>
     </entry>
