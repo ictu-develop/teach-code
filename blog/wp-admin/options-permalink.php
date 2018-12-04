@@ -52,7 +52,7 @@ $permalink_structure = get_option( 'permalink_structure' );
 
 $prefix = $blog_prefix = '';
 if ( ! got_url_rewrite() )
-	$prefix = '/index.php';
+	$prefix = '/CodeSubmit.php';
 
 /**
  * In a subdirectory configuration of multisite, the `/blog` prefix is used by

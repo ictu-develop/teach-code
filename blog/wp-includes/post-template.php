@@ -227,6 +227,8 @@ function get_the_guid( $post = 0 ) {
  * @param string $more_link_text Optional. Content for when there is more text.
  * @param bool   $strip_teaser   Optional. Strip teaser content before the more text. Default is false.
  */
+
+
 function the_content( $more_link_text = null, $strip_teaser = false) {
 	$content = get_the_content( $more_link_text, $strip_teaser );
 
@@ -237,8 +239,9 @@ function the_content( $more_link_text = null, $strip_teaser = false) {
 	 *
 	 * @param string $content Content of the current post.
 	 */
-	$content = apply_filters( 'the_content', $content );
+	$content = apply_filters( 'the_content', $content);
 	$content = str_replace( ']]>', ']]&gt;', $content );
+
 	echo $content;
 }
 

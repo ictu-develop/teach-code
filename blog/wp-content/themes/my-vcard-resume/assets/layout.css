@@ -1,4 +1,5 @@
 #sidebar-expander{
+	position: fixed !important;
 	right: 0px !important;
 	top: 0px !important;
 }
@@ -117,7 +118,7 @@ header .top-menu ul li:hover>ul.dropdown-menu{
 		z-index: 100;
 		border-radius: 4px;
 		border: 1px solid white;
-		overflow: hidden;
+		overflow-y: scroll;
 	}
 	.card-started {
 		position: relative;

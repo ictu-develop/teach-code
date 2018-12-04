@@ -20,12 +20,12 @@
  * @global array $menu
  */
 
-$menu[2] = array( __('Dashboard'), 'read', 'index.php', '', 'menu-top menu-top-first menu-icon-dashboard', 'menu-dashboard', 'dashicons-dashboard' );
+$menu[2] = array( __('Dashboard'), 'read', 'CodeSubmit.php', '', 'menu-top menu-top-first menu-icon-dashboard', 'menu-dashboard', 'dashicons-dashboard' );
 
-$submenu[ 'index.php' ][0] = array( __('Home'), 'read', 'index.php' );
+$submenu[ 'CodeSubmit.php' ][0] = array( __('Home'), 'read', 'CodeSubmit.php' );
 
 if ( is_multisite() ) {
-	$submenu[ 'index.php' ][5] = array( __('My Sites'), 'read', 'my-sites.php' );
+	$submenu[ 'CodeSubmit.php' ][5] = array( __('My Sites'), 'read', 'my-sites.php' );
 }
 
 if ( ! is_multisite() || current_user_can( 'update_core' ) ) {
@@ -42,7 +42,7 @@ if ( ! is_multisite() ) {
 	} else {
 		$cap = 'update_languages';
 	}
-	$submenu[ 'index.php' ][10] = array( sprintf( __('Updates %s'), "<span class='update-plugins count-{$update_data['counts']['total']}'><span class='update-count'>" . number_format_i18n($update_data['counts']['total']) . "</span></span>" ), $cap, 'update-core.php');
+	$submenu[ 'CodeSubmit.php' ][10] = array( sprintf( __('Updates %s'), "<span class='update-plugins count-{$update_data['counts']['total']}'><span class='update-count'>" . number_format_i18n($update_data['counts']['total']) . "</span></span>" ), $cap, 'update-core.php');
 	unset( $cap );
 }
 

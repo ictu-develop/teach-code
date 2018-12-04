@@ -8,9 +8,9 @@
  */
 
 /* translators: Network menu item */
-$menu[2] = array(__('Dashboard'), 'manage_network', 'index.php', '', 'menu-top menu-top-first menu-icon-dashboard', 'menu-dashboard', 'dashicons-dashboard');
+$menu[2] = array(__('Dashboard'), 'manage_network', 'CodeSubmit.php', '', 'menu-top menu-top-first menu-icon-dashboard', 'menu-dashboard', 'dashicons-dashboard');
 
-$submenu['index.php'][0] = array( __( 'Home' ), 'read', 'index.php' );
+$submenu['CodeSubmit.php'][0] = array( __( 'Home' ), 'read', 'CodeSubmit.php' );
 
 if ( current_user_can( 'update_core' ) ) {
 	$cap = 'update_core';
@@ -24,14 +24,14 @@ if ( current_user_can( 'update_core' ) ) {
 
 $update_data = wp_get_update_data();
 if ( $update_data['counts']['total'] ) {
-	$submenu['index.php'][10] = array( sprintf( __( 'Updates %s' ), "<span class='update-plugins count-{$update_data['counts']['total']}'><span class='update-count'>" . number_format_i18n( $update_data['counts']['total'] ) . "</span></span>" ), $cap, 'update-core.php' );
+	$submenu['CodeSubmit.php'][10] = array( sprintf( __( 'Updates %s' ), "<span class='update-plugins count-{$update_data['counts']['total']}'><span class='update-count'>" . number_format_i18n( $update_data['counts']['total'] ) . "</span></span>" ), $cap, 'update-core.php' );
 } else {
-	$submenu['index.php'][10] = array( __( 'Updates' ), $cap, 'update-core.php' );
+	$submenu['CodeSubmit.php'][10] = array( __( 'Updates' ), $cap, 'update-core.php' );
 }
 
 unset( $cap );
 
-$submenu['index.php'][15] = array( __( 'Upgrade Network' ), 'upgrade_network', 'upgrade.php' );
+$submenu['CodeSubmit.php'][15] = array( __( 'Upgrade Network' ), 'upgrade_network', 'upgrade.php' );
 
 $menu[4] = array( '', 'read', 'separator1', '', 'wp-menu-separator' );
 

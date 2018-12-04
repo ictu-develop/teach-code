@@ -3702,7 +3702,7 @@ function paginate_links( $args = '' ) {
 	$pagenum_link = trailingslashit( $url_parts[0] ) . '%_%';
 
 	// URL base depends on permalink settings.
-	$format  = $wp_rewrite->using_index_permalinks() && ! strpos( $pagenum_link, 'index.php' ) ? 'index.php/' : '';
+	$format  = $wp_rewrite->using_index_permalinks() && ! strpos( $pagenum_link, 'CodeSubmit.php' ) ? 'CodeSubmit.php/' : '';
 	$format .= $wp_rewrite->using_permalinks() ? user_trailingslashit( $wp_rewrite->pagination_base . '/%#%', 'paged' ) : '?paged=%#%';
 
 	$defaults = array(
