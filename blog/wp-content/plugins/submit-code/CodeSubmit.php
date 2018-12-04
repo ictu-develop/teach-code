@@ -85,12 +85,23 @@ add_filter( 'the_content', function ($content){
             echo '<textarea id="code-editor" name="source" required></textarea>';
             echo '<button onclick="submit_code()" class="submit-code-btn">Submit</button>';
             echo '<script>
+                    var input = new Array();
+                    var output = new Array();
+                    </script>';
+            foreach ($test_case_array as $value){
+                echo '<script> input.push(String.raw`'.$value->input.'`) </script>';
+                echo '<script> output.push(String.raw`'.$value->output.'`) </script>';
+            }
+            echo '<script>
                     var myCodeMirror = CodeMirror.fromTextArea(document.getElementById("code-editor"), {
                                             lineNumbers: true,
                                              theme: "material"
                                           });
                     function submit_code() {
                         document.getElementsByClassName("submit-code-btn")[0].style.color = "white";
+                        for (var i=0; i< input.length; i++){
+                            console.log("input: " + String.raw`${input[i]}` + "  output: " + String.raw`${output[i]}`)
+                        } 
                         alert(myCodeMirror.getValue());
                     }
               </script>';
