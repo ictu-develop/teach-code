@@ -152,9 +152,9 @@ add_filter( 'the_content', function ($content){
                                 } 
                                 await $(".submit-result").append("<br><br>");
                                 if (pass < total/2) 
-                                    await $(".submit-result").append("<p class=Wrong> Passed: "+pass+"/"+total+"</p>");
+                                    await $(".submit-result").append("<h4 class=Wrong> Passed: "+pass+"/"+total+"</h4>");
                                 else 
-                                    await $(".submit-result").append("<p class=accepted> Passed: "+pass+"/"+total+"</p>");
+                                    await $(".submit-result").append("<h4 class=accepted> Passed: "+pass+"/"+total+"</h4>");
                                 clicked = 0;
                             }
                         }

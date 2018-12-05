@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7bfa8270-58c6-4169-a4a0-8f1c41419a46" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/blog/wp-content/plugins/submit-code/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/wp-content/plugins/submit-code/CodeSubmit.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/wp-content/plugins/submit-code/CodeSubmit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/wp-login.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/wp-login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/submit/Submit.php" beforeDir="false" afterPath="$PROJECT_DIR$/submit/Submit.php" afterDir="false" />
-    </list>
+    <list default="true" id="7bfa8270-58c6-4169-a4a0-8f1c41419a46" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,8 +39,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/blog/wp-content/plugins/submit-code/CodeSubmit.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="152" column="83" selection-start-line="152" selection-start-column="83" selection-end-line="152" selection-end-column="83" />
+            <state relative-caret-position="250">
+              <caret line="154" column="84" selection-start-line="154" selection-start-column="84" selection-end-line="154" selection-end-column="84" />
               <folding>
                 <element signature="e#6#384#0#PHP" expanded="true" />
               </folding>
@@ -288,16 +282,15 @@
       <workItem from="1543778498701" duration="13453000" />
       <workItem from="1543793319808" duration="1221000" />
       <workItem from="1543825049066" duration="8359000" />
-      <workItem from="1543909839081" duration="61413000" />
+      <workItem from="1543909839081" duration="61718000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85394000" />
+    <option name="totallyTimeSpent" value="85699000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="10" y="62" width="1346" height="686" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2653846" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -312,7 +305,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49923077" visible="true" weight="0.30107528" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49923077" visible="true" weight="0.30107528" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50076926" side_tool="true" weight="0.30107528" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -623,8 +616,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/blog/wp-content/plugins/submit-code/CodeSubmit.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="152" column="83" selection-start-line="152" selection-start-column="83" selection-end-line="152" selection-end-column="83" />
+        <state relative-caret-position="250">
+          <caret line="154" column="84" selection-start-line="154" selection-start-column="84" selection-end-line="154" selection-end-column="84" />
           <folding>
             <element signature="e#6#384#0#PHP" expanded="true" />
           </folding>
