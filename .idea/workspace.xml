@@ -39,8 +39,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/blog/wp-content/plugins/submit-code/CodeSubmit.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="154" column="84" selection-start-line="154" selection-start-column="84" selection-end-line="154" selection-end-column="84" />
+            <state relative-caret-position="205">
+              <caret line="154" column="117" selection-start-line="154" selection-start-column="117" selection-end-line="154" selection-end-column="117" />
               <folding>
                 <element signature="e#6#384#0#PHP" expanded="true" />
               </folding>
@@ -282,15 +282,15 @@
       <workItem from="1543778498701" duration="13453000" />
       <workItem from="1543793319808" duration="1221000" />
       <workItem from="1543825049066" duration="8359000" />
-      <workItem from="1543909839081" duration="61718000" />
+      <workItem from="1543909839081" duration="62484000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85699000" />
+    <option name="totallyTimeSpent" value="86465000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="10" y="62" width="1346" height="686" extended-state="0" />
+    <frame x="10" y="62" width="1346" height="686" extended-state="1" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2653846" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -616,8 +616,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/blog/wp-content/plugins/submit-code/CodeSubmit.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="154" column="84" selection-start-line="154" selection-start-column="84" selection-end-line="154" selection-end-column="84" />
+        <state relative-caret-position="205">
+          <caret line="154" column="117" selection-start-line="154" selection-start-column="117" selection-end-line="154" selection-end-column="117" />
           <folding>
             <element signature="e#6#384#0#PHP" expanded="true" />
           </folding>
