@@ -33,7 +33,7 @@ add_filter( 'the_content', function ($content){
 
         // test case string
         $test_case = mb_substr($content, $pos_end + strlen('start-test'), $content_length - strlen(' end-test'));
-        //echo $test_case;
+        echo $test_case;
         $test_case = str_split($test_case);
         $line = (string)'';
         $test_case_array = [];
@@ -48,9 +48,12 @@ add_filter( 'the_content', function ($content){
                 $pos_output = mb_strpos($line, 'output:');
                 $input = mb_substr($line, $pos_input + strlen('input:') + 1, $pos_output - strlen('output:') - 1);
                 $output = mb_substr($line, $pos_output + strlen('output:') + 1, strlen($line) - strlen($input) - strlen('output:') - strlen('input:') - 5);
-                //echo '<br>'.$input.' : '.$output;
+                if ($input != '' && $output != '') {
+                    echo '<br>' . $input . ' : ' . $output;
+                    //echo '<br>' . $line;
+                    $test_case_array[] = new TestCase($input, $output);
+                }
                 $line = '';
-                $test_case_array[] = new TestCase($input, $output);
             }
         }
         // content string without test caseget_site_urlz
@@ -112,7 +115,8 @@ add_filter( 'the_content', function ($content){
                                              theme: "material"
                                           });
                     async function submit_code() {
-                        if (myCodeMirror.getValue() != "")
+                        var source_code = myCodeMirror.getValue()
+                        if (source_code != "")
                             clicked++;
                         var count_unit_test = 1;
                         var total = input.length;
@@ -120,8 +124,7 @@ add_filter( 'the_content', function ($content){
                         document.getElementsByClassName("submit-code-btn")[0].style.color = "white";
                         if (clicked === 1) {
                             await $( ".submit-result" ).empty();
-                            if (myCodeMirror.getValue() != ""){ 
-                                var source_code = myCodeMirror.getValue()
+                            if (source_code != ""){ 
                                 for (var i=0; i< input.length; i++){
                                     await $.ajax({
                                               method: "POST",
@@ -137,6 +140,7 @@ add_filter( 'the_content', function ($content){
                                               var dataJson = JSON.parse(json);
                                               //console.log(dataJson);
                                               console.log(dataJson.status.description);
+                                              console.log("Expected output" + output[i]);
                                               console.log("Your output: ",  atob(dataJson.stdout));
                                               if (dataJson.status.description === "Accepted") {
                                                   pass++;
