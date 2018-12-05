@@ -33,7 +33,7 @@ add_filter( 'the_content', function ($content){
 
         // test case string
         $test_case = mb_substr($content, $pos_end + strlen('start-test'), $content_length - strlen(' end-test'));
-        echo $test_case;
+        //echo $test_case;
         $test_case = str_split($test_case);
         $line = (string)'';
         $test_case_array = [];
@@ -49,7 +49,7 @@ add_filter( 'the_content', function ($content){
                 $input = mb_substr($line, $pos_input + strlen('input:') + 1, $pos_output - strlen('output:') - 1);
                 $output = mb_substr($line, $pos_output + strlen('output:') + 1, strlen($line) - strlen($input) - strlen('output:') - strlen('input:') - 5);
                 if ($input != '' && $output != '') {
-                    echo '<br>' . $input . ' : ' . $output;
+                    //echo '<br>' . $input . ' : ' . $output;
                     //echo '<br>' . $line;
                     $test_case_array[] = new TestCase($input, $output);
                 }
