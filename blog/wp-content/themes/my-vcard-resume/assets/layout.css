@@ -23,6 +23,15 @@
 .card-started .title{
 	margin-top: 15px;
 }
+
+.slimScrollDiv{
+	height: 100% !important;
+}
+
+.card-wrap{
+	height: 100% !important;
+}
+
 .icon.fa.fa-plus {
 	display: none !important;
 }
