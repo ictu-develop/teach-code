@@ -1,16 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Test api</title>
-    <style>
-        body{
-            font-family: sans-serif;
-        }
-    </style>
-</head>
-</html>
-
 
 <?php
 /**
@@ -19,7 +6,7 @@
  * Date: 12/2/18
  * Time: 2:23 PM
  */
-//header('Content-Type: application/json; charset=UTF-8');
+header('Content-Type: application/json; charset=UTF-8');
 
 class Submit
 {
@@ -67,7 +54,7 @@ class Submit
         return $http_code;
     }
 
-    function submissions($source_code, $stdin, $expected_output, $index)
+    function submissions($source_code, $stdin, $expected_output)
     {
         $string = '{
             "source_code": "'.base64_encode($source_code).'",
@@ -83,46 +70,17 @@ class Submit
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 
         $res = trim(curl_exec($ch));
-        $http_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-        $obj = json_decode($res);
-
-        if ($obj->status->description === 'Accepted')
-            echo '<p style="color:green;"> Test '.$index.': '.$obj->status->description.'<br></p>';
-        else
-            echo '<p style="color:red;"> Test '.$index.': '.$obj->status->description.'<br></p>';
-
-        echo 'Input: '.base64_decode($stdin).'<br>';
-        echo 'Expected output: '.base64_decode($expected_output).'<br>';
-        echo 'Your ouput: '.base64_decode($obj->stdout).'<br>';
-        if ($obj->compile_output != null)
-            echo 'Messenge: '.base64_decode($obj->compile_output);
+        //echo "input ".base64_decode($stdin)." : output: ".base64_decode($expected_output)." \n";
+        echo $res;
     }
 
 }
 
+$stdin = $_POST['stdin'];
+$expected_output = $_POST['expected_output'];
+$source = $_POST['source'];
 $obj = new Submit();
-//$obj->authenticate();
-//echo '<br>';
+
+$obj->submissions($source, base64_encode($stdin), base64_encode($expected_output));
 //
-//$obj->authorize();
-//echo '<br>';
-
-$obj->submissions($_POST['source'], base64_encode("2\n3"), base64_encode(5), 1);
-echo '<br><br>';
-
-$obj->submissions($_POST['source'], base64_encode("100\n100"), base64_encode(200), 2);
-echo '<br><br>';
-
-
-$obj->submissions($_POST['source'], base64_encode("60\n40"), base64_encode(100), 3);
-echo '<br><br>';
-
-$obj->submissions($_POST['source'], base64_encode("100\n50"), base64_encode(150), 4);
-echo '<br><br>';
-
-
-$obj->submissions($_POST['source'], base64_encode("7\n50"), base64_encode(57), 5);
-echo '<br><br>';
-
-
-
+//$obj->submissions($_POST['source'], base64_encode("2\n3"), base64_encode(5));

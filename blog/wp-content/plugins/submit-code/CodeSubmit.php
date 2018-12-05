@@ -53,20 +53,30 @@ add_filter( 'the_content', function ($content){
                 $test_case_array[] = new TestCase($input, $output);
             }
         }
-        // content string without test case
+        // content string without test caseget_site_urlz
         $content = mb_substr($content, $pos_start, $pos_end);
         echo '<br>';
         echo '
-                
-                <link rel="stylesheet" href="../../../../wp-content/plugins/submit-code/assets/code-editor/theme/material.css">
-               <link rel="stylesheet" href="../../../../wp-content/plugins/submit-code/assets/code-editor/lib/codemirror.css">
-                <script src="../../../../wp-content/plugins/submit-code/assets/code-editor/lib/codemirror.js"></script>
-                <script src="../../../../wp-content/plugins/submit-code/assets/code-editor/mode/javascript/javascript.js"></script>
+               <link rel="stylesheet" href="'.get_site_url().'/wp-content/plugins/submit-code/assets/code-editor/theme/material.css">
+               <link rel="stylesheet" href="'.get_site_url().'/wp-content/plugins/submit-code/assets/code-editor/lib/codemirror.css">
+               <script src="'.get_site_url().'/wp-content/plugins/submit-code/assets/code-editor/lib/codemirror.js"></script>
+               <script src="'.get_site_url().'/wp-content/plugins/submit-code/assets/code-editor/mode/javascript/javascript.js"></script>
+               <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
             ';
         echo $content;
         if (is_user_logged_in()) {
             echo '<br>';
             echo '<style>
+                .accepted{
+                    font-weight: bold;
+                    color: green;
+                    height: 0px;
+                }
+                .wrong{
+                    font-weight: bold;
+                    color: red;
+                    height: 0px;
+                }
                 .CodeMirror{
                 border: 3px solid #263238;
                     border-radius: 10px;
@@ -84,25 +94,70 @@ add_filter( 'the_content', function ($content){
               </style>';
             echo '<textarea id="code-editor" name="source" required></textarea>';
             echo '<button onclick="submit_code()" class="submit-code-btn">Submit</button>';
+            echo '<p></p>';
+            echo '<div class="submit-result">
+                   </div>';
             echo '<script>
+                    var clicked = 0;
                     var input = new Array();
                     var output = new Array();
                     </script>';
             foreach ($test_case_array as $value){
-                echo '<script> input.push(String.raw`'.$value->input.'`) </script>';
-                echo '<script> output.push(String.raw`'.$value->output.'`) </script>';
+                echo '<script> input.push("'.$value->input.'") </script>';
+                echo '<script> output.push("'.$value->output.'") </script>';
             }
             echo '<script>
                     var myCodeMirror = CodeMirror.fromTextArea(document.getElementById("code-editor"), {
                                             lineNumbers: true,
                                              theme: "material"
                                           });
-                    function submit_code() {
+                    async function submit_code() {
+                        clicked++;
+                        var count_unit_test = 1;
+                        var total = input.length;
+                        var pass = 0;
                         document.getElementsByClassName("submit-code-btn")[0].style.color = "white";
-                        for (var i=0; i< input.length; i++){
-                            console.log("input: " + String.raw`${input[i]}` + "  output: " + String.raw`${output[i]}`)
-                        } 
-                        alert(myCodeMirror.getValue());
+                        if (clicked === 1) {
+                            await $( ".submit-result" ).empty();
+                            if (myCodeMirror.getValue() != ""){ 
+                                var source_code = myCodeMirror.getValue()
+                                for (var i=0; i< input.length; i++){
+                                    await $.ajax({
+                                              method: "POST",
+                                              url: "' . get_site_url() . '/wp-content/plugins/submit-code/api.php",
+                                              data: { 
+                                                  source: source_code,
+                                                  stdin: input[i],
+                                                  expected_output:  output[i]
+                                               }
+                                            })
+                                          .done(async function(data) {
+                                              var json = JSON.stringify(data);
+                                              var dataJson = JSON.parse(json);
+                                              //console.log(dataJson);
+                                              console.log(dataJson.status.description);
+                                              console.log("Your output: ",  atob(dataJson.stdout));
+                                              if (dataJson.status.description === "Accepted") {
+                                                  pass++;
+                                                  await $(".submit-result").append("<p class=accepted>"+count_unit_test+". Accepted</p>"); 
+                                              } else { 
+                                                  await $(".submit-result").append("<p class=wrong>"+count_unit_test+". Wrong</p>"); 
+                                              }
+                                          })
+                                          .fail(function(jqXHR, textStatus, errorThrown) {
+                                              alert( errorThrown );
+                                          });
+                                    count_unit_test++;
+                                    //console.log("input:" + String.raw`${input[i]}` + "output:" + String.raw`${output[i]}`+";")
+                                } 
+                                await $(".submit-result").append("<br><br>");
+                                if (pass < total/2) 
+                                    await $(".submit-result").append("<p class=Wrong> Passed: "+pass+"/"+total+"</p>");
+                                else 
+                                    await $(".submit-result").append("<p class=accepted> Passed: "+pass+"/"+total+"</p>");
+                                clicked = 0;
+                            }
+                        }
                     }
               </script>';
         }

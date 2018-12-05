@@ -514,8 +514,8 @@ case 'logout' :
 
 	wp_logout();
 
-	if ( ! empty( $_REQUEST['redirect_to'] ) ) {
-		$redirect_to = $requested_redirect_to = $_REQUEST['redirect_to'];
+	if ( ! empty( get_site_url() ) ) {
+		$redirect_to = $requested_redirect_to = get_site_url();
 	} else {
 		$redirect_to = 'wp-login.php?loggedout=true';
 		$requested_redirect_to = '';
@@ -535,7 +535,7 @@ case 'logout' :
 	 * @param WP_User $user                  The WP_User object for the user that's logging out.
 	 */
 	$redirect_to = apply_filters( 'logout_redirect', $redirect_to, $requested_redirect_to, $user );
-	wp_safe_redirect( 'http://localhost/web-teach-code/blog/' );
+	wp_safe_redirect( get_site_url().'/' );
 	exit();
 
 case 'lostpassword' :
@@ -904,11 +904,11 @@ default:
 	// config redirect after login
 	if ( isset( $_REQUEST['redirect_to'] ) ) {
         setcookie('username', $_POST['log'], 0, COOKIEPATH, COOKIE_DOMAIN, $secure);
-		$redirect_to = $_REQUEST['redirect_to'];
+		$redirect_to = get_site_url().'/';
         $parse_url = parse_url($redirect_to);
         $redirect_to = $parse_url['scheme'].'://'.$parse_url['host'].'/'.str_replace('/wp-admin', '', $parse_url['path']);
 		// Redirect to https if user wants ssl
-		if ( $secure_cookie && false !== strpos($redirect_to, 'wp-admin') )
+		if ( $secure_cookie && false !== strpos($redirect_to, 'blog') )
 			$redirect_to = preg_replace('|^http://|', 'https://', $redirect_to);
 	} else {
 		$redirect_to = admin_url();
