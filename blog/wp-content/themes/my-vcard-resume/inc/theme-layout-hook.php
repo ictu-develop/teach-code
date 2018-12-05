@@ -59,7 +59,7 @@ if( !function_exists( 'my_vcard_resume_theme_vcard_profile' ) ):
             <?php
             if (is_user_logged_in()){
                 echo '<p class="display-name">'.htmlspecialchars($_COOKIE['username']).'</p>';
-                echo '<p class="a-login-logout"><a href="http://localhost/web-teach-code/blog/wp-login.php?action=logout">Thoát</a></p>';
+                echo '<p class="a-login-logout"><a href="'.get_site_url().'/wp-login.php?action=logout">Thoát</a></p>';
             } else{
                 echo '<style>
                         .a-login-logout {
@@ -68,7 +68,7 @@ if( !function_exists( 'my_vcard_resume_theme_vcard_profile' ) ):
                             margin-top: -5px;
                         }
                         </style>';
-               echo '<p class="a-login-logout"><a href="http://localhost/web-teach-code/blog/wp-login.php">Đăng nhập</a></p>';
+               echo '<p class="a-login-logout"><a href="'.get_site_url().'/wp-login.php">Đăng nhập</a></p>';
             }
             ?></div>
         <?php //$description = get_bloginfo( 'description', 'display' );
