@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7bfa8270-58c6-4169-a4a0-8f1c41419a46" name="Default Changelist" comment="" />
+    <list default="true" id="7bfa8270-58c6-4169-a4a0-8f1c41419a46" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/wp-content/plugins/submit-code/CodeSubmit.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/wp-content/plugins/submit-code/CodeSubmit.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -10,52 +13,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/single.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="50" column="33" selection-start-line="50" selection-start-column="16" selection-end-line="50" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blog/wp-includes/post-template.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="243" selection-start-line="243" selection-end-line="243" />
-              <folding>
-                <element signature="e#6#153#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blog/wp-content/plugins/submit-code/assets/js/admin.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/blog/wp-content/plugins/submit-code/CodeSubmit.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="154" column="117" selection-start-line="154" selection-start-column="117" selection-end-line="154" selection-end-column="117" />
+            <state relative-caret-position="135">
+              <caret line="115" column="28" selection-start-line="115" selection-start-column="28" selection-end-line="115" selection-end-column="28" />
               <folding>
-                <element signature="e#6#384#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/submit/Submit.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="95" column="54" selection-start-line="95" selection-start-column="48" selection-end-line="95" selection-end-column="54" />
-              <folding>
-                <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+                <element signature="e#6#236#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -141,6 +105,7 @@
         <option value="$PROJECT_DIR$/blog/wp-login.php" />
         <option value="$PROJECT_DIR$/submit/Submit.php" />
         <option value="$PROJECT_DIR$/blog/wp-content/plugins/submit-code/api.php" />
+        <option value="$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/style.css" />
         <option value="$PROJECT_DIR$/blog/wp-content/plugins/submit-code/CodeSubmit.php" />
       </list>
     </option>
@@ -189,48 +154,6 @@
               <item name="wp-content" type="462c0819:PsiDirectoryNode" />
               <item name="plugins" type="462c0819:PsiDirectoryNode" />
               <item name="submit-code" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web-teach-code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web-teach-code" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="submit-code" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web-teach-code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web-teach-code" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web-teach-code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web-teach-code" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="my-vcard-resume" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web-teach-code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web-teach-code" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="my-vcard-resume" type="462c0819:PsiDirectoryNode" />
-              <item name="inc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web-teach-code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web-teach-code" type="462c0819:PsiDirectoryNode" />
-              <item name="submit" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web-teach-code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
             </path>
           </expand>
           <select />
@@ -282,17 +205,18 @@
       <workItem from="1543778498701" duration="13453000" />
       <workItem from="1543793319808" duration="1221000" />
       <workItem from="1543825049066" duration="8359000" />
-      <workItem from="1543909839081" duration="62484000" />
+      <workItem from="1543909839081" duration="64211000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86465000" />
+    <option name="totallyTimeSpent" value="88192000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="10" y="62" width="1346" height="686" extended-state="1" />
+    <frame x="10" y="62" width="1346" height="686" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2653846" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2653846" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -305,7 +229,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49923077" visible="true" weight="0.30107528" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49923077" visible="true" weight="0.30107528" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50076926" side_tool="true" weight="0.30107528" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -329,13 +253,6 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/submit/d.html" />
-    <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1200">
-          <caret line="31" column="9" lean-forward="true" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/footer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -614,12 +531,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/wp-content/plugins/submit-code/index.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/blog/wp-content/plugins/submit-code/CodeSubmit.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="154" column="117" selection-start-line="154" selection-start-column="117" selection-end-line="154" selection-end-column="117" />
+        <state relative-caret-position="135">
+          <caret line="115" column="28" selection-start-line="115" selection-start-column="28" selection-end-line="115" selection-end-column="28" />
           <folding>
-            <element signature="e#6#384#0#PHP" expanded="true" />
+            <element signature="e#6#236#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

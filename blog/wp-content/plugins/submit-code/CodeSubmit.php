@@ -112,7 +112,8 @@ add_filter( 'the_content', function ($content){
                                              theme: "material"
                                           });
                     async function submit_code() {
-                        clicked++;
+                        if (myCodeMirror.getValue() != "")
+                            clicked++;
                         var count_unit_test = 1;
                         var total = input.length;
                         var pass = 0;
