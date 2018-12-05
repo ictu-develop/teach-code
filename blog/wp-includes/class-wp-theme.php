@@ -261,11 +261,11 @@ final class WP_Theme implements ArrayAccess {
 		// (If template is set from cache [and there are no errors], we know it's good.)
 		if ( ! $this->template && ! ( $this->template = $this->headers['Template'] ) ) {
 			$this->template = $this->stylesheet;
-			if ( ! file_exists( $this->theme_root . '/' . $this->stylesheet . '/CodeSubmit.php' ) ) {
+			if ( ! file_exists( $this->theme_root . '/' . $this->stylesheet . '/index.php' ) ) {
 				$error_message = sprintf(
-					/* translators: 1: CodeSubmit.php, 2: Codex URL, 3: style.css */
+					/* translators: 1: index.php, 2: Codex URL, 3: style.css */
 					__( 'Template is missing. Standalone themes need to have a %1$s template file. <a href="%2$s">Child themes</a> need to have a Template header in the %3$s stylesheet.' ),
-					'<code>CodeSubmit.php</code>',
+					'<code>index.php</code>',
 					__( 'https://codex.wordpress.org/Child_Themes' ),
 					'<code>style.css</code>'
 				);
@@ -276,11 +276,11 @@ final class WP_Theme implements ArrayAccess {
 		}
 
 		// If we got our data from cache, we can assume that 'template' is pointing to the right place.
-		if ( ! is_array( $cache ) && $this->template != $this->stylesheet && ! file_exists( $this->theme_root . '/' . $this->template . '/CodeSubmit.php' ) ) {
+		if ( ! is_array( $cache ) && $this->template != $this->stylesheet && ! file_exists( $this->theme_root . '/' . $this->template . '/index.php' ) ) {
 			// If we're in a directory of themes inside /themes, look for the parent nearby.
 			// wp-content/themes/directory-of-themes/*
 			$parent_dir = dirname( $this->stylesheet );
-			if ( '.' != $parent_dir && file_exists( $this->theme_root . '/' . $parent_dir . '/' . $this->template . '/CodeSubmit.php' ) ) {
+			if ( '.' != $parent_dir && file_exists( $this->theme_root . '/' . $parent_dir . '/' . $this->template . '/index.php' ) ) {
 				$this->template = $parent_dir . '/' . $this->template;
 			} elseif ( ( $directories = search_theme_directories() ) && isset( $directories[ $this->template ] ) ) {
 				// Look for the template in the search_theme_directories() results, in case it is in another theme root.

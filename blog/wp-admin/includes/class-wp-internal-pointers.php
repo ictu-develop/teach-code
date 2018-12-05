@@ -43,7 +43,7 @@ final class WP_Internal_Pointers {
 		 *     )
 		 */
 		$registered_pointers = array(
-			'CodeSubmit.php' => 'wp496_privacy',
+			'index.php' => 'wp496_privacy',
 		);
 
 		// Check if screen related pointer is registered

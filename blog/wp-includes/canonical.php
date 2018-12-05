@@ -335,7 +335,7 @@ function redirect_canonical( $requested_url = null, $do_redirect = true ) {
 				$redirect['query'] = remove_query_arg( 'cpage', $redirect['query'] );
 			}
 
-			$redirect['path'] = user_trailingslashit( preg_replace('|/' . preg_quote( $wp_rewrite->index, '|' ) . '/?$|', '/', $redirect['path']) ); // strip off trailing /CodeSubmit.php/
+			$redirect['path'] = user_trailingslashit( preg_replace('|/' . preg_quote( $wp_rewrite->index, '|' ) . '/?$|', '/', $redirect['path']) ); // strip off trailing /index.php/
 			if ( !empty( $addl_path ) && $wp_rewrite->using_index_permalinks() && strpos($redirect['path'], '/' . $wp_rewrite->index . '/') === false )
 				$redirect['path'] = trailingslashit($redirect['path']) . $wp_rewrite->index . '/';
 			if ( !empty( $addl_path ) )
@@ -389,7 +389,7 @@ function redirect_canonical( $requested_url = null, $do_redirect = true ) {
 	else
 		unset($redirect['port']);
 
-	// trailing /CodeSubmit.php
+	// trailing /index.php
 	$redirect['path'] = preg_replace('|/' . preg_quote( $wp_rewrite->index, '|' ) . '/*?$|', '/', $redirect['path']);
 
 	$punctuation_pattern = implode( '|', array_map( 'preg_quote', array(
@@ -425,7 +425,7 @@ function redirect_canonical( $requested_url = null, $do_redirect = true ) {
 		$redirect['query'] = preg_replace( '#^\??&*?#', '', $redirect['query'] );
 	}
 
-	// strip /CodeSubmit.php/ when we're not using PATHINFO permalinks
+	// strip /index.php/ when we're not using PATHINFO permalinks
 	if ( !$wp_rewrite->using_index_permalinks() )
 		$redirect['path'] = str_replace( '/' . $wp_rewrite->index . '/', '/', $redirect['path'] );
 

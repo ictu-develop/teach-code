@@ -33,7 +33,7 @@ if ( 'updateblogsettings' == $action && isset( $_POST['primary_blog'] ) ) {
 }
 
 $title = __( 'My Sites' );
-$parent_file = 'CodeSubmit.php';
+$parent_file = 'index.php';
 
 get_current_screen()->add_help_tab( array(
 	'id'      => 'overview',
