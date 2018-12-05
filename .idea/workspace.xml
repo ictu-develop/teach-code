@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7bfa8270-58c6-4169-a4a0-8f1c41419a46" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/blog/wp-content/plugins/submit-code/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/blog/wp-content/plugins/submit-code/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/blog/README.MD" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,12 +12,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/blog/README.MD">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="225">
-                <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+              <first_editor relative-caret-position="210">
+                <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
               </first_editor>
               <second_editor />
             </state>
@@ -54,11 +54,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blog/wp-content/plugins/submit-code/style.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
-              <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+              <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -153,12 +153,12 @@
         <option value="$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/assets/layout.css" />
         <option value="$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/inc/theme-layout-hook.php" />
         <option value="$PROJECT_DIR$/blog/wp-content/plugins/submit-code/api.php" />
-        <option value="$PROJECT_DIR$/blog/README.MD" />
         <option value="$PROJECT_DIR$/blog/wp-content/plugins/submit-code/CodeSubmit.php" />
         <option value="$PROJECT_DIR$/blog/wp-content/plugins/submit-code/assets/code-editor/lib/codemirror.css" />
         <option value="$PROJECT_DIR$/blog/wp-content/plugins/submit-code/assets/code-editor/theme/material.css" />
         <option value="$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/style.css" />
         <option value="$PROJECT_DIR$/blog/wp-content/plugins/submit-code/style.css" />
+        <option value="$PROJECT_DIR$/blog/README.MD" />
       </list>
     </option>
   </component>
@@ -279,18 +279,18 @@
       <workItem from="1543793319808" duration="1221000" />
       <workItem from="1543825049066" duration="8359000" />
       <workItem from="1543909839081" duration="67594000" />
-      <workItem from="1544019546891" duration="3436000" />
+      <workItem from="1544019546891" duration="3724000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95011000" />
+    <option name="totallyTimeSpent" value="95299000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="10" y="62" width="1346" height="686" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4974359" visible="true" weight="0.26923078" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4974359" visible="true" weight="0.26923078" />
       <window_info id="Structure" order="1" sideWeight="0.50256413" side_tool="true" weight="0.26923078" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -600,16 +600,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog/README.MD">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="225">
-            <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blog/wp-content/plugins/submit-code/assets/code-editor/theme/material.css">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -644,7 +634,17 @@
     <entry file="file://$PROJECT_DIR$/blog/wp-content/plugins/submit-code/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/README.MD">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="210">
+            <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
