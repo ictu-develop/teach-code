@@ -38,7 +38,7 @@ echo "<style>
         position: initial;
         display: block;
         text-align: center;
-        margin-top: -23px;
+        margin-top: -15px;
         font-weight: bold;
     }
     .fullname {
@@ -71,8 +71,8 @@ $sidebar = ribbon_lite_custom_sidebar(); ?>
                 $current_user = wp_get_current_user();
                 echo '<img class="img-profile" src="' . get_site_url() . '/wp-content/themes/ribbon-lite/images/ic_user.png">';
                 echo '<p class="username">'.$current_user->user_login.'</p>';
-                echo '<p class="fullname">Fullname: '.$current_user->user_lastname.' '.$current_user->first_name.'</p>';
-                echo '<p class="email">Email: '.$current_user->user_email.'</p>';
+                //echo '<p class="fullname">Fullname: '.$current_user->user_lastname.' '.$current_user->first_name.'</p>';
+                echo '<p class="email">'.$current_user->user_email.'</p>';
                 echo '<p class="login-logout"><a href="'.get_site_url().'/wp-login.php?action=logout" class="a-login-logout">Thoát</a></p>';
             } else {
 

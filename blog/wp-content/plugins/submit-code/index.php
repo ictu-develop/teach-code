@@ -21,16 +21,17 @@ if(!defined('CODE_SUBMIT_PATH'))
 
 add_filter( 'the_content', function ($content){
     // init post, length
-    if (is_single()) {
-        $pos_start = 0;
-        $pos_end = mb_strpos($content, 'start-test');
-        $pos_last =  mb_strpos($content, 'end-test');
-        $content_length = mb_strlen($content);
-        $test_length = mb_strlen(mb_substr($content, $pos_end));
+    $pos_start = 0;
+    $pos_end = mb_strpos($content, 'start-test');
+    $pos_last =  mb_strpos($content, 'end-test');
+    $content_length = mb_strlen($content);
+    $test_length = mb_strlen(mb_substr($content, $pos_end));
 
-        if ($pos_end == false || $pos_last == false){
-            return $content;
-        }
+    if ($pos_end == false || $pos_last == false){
+        return $content;
+    }
+
+    if (is_single()) {
 
         // test case string
         $test_case = mb_substr($content, $pos_end + strlen('start-test'), $content_length - strlen(' end-test'));
@@ -93,6 +94,7 @@ add_filter( 'the_content', function ($content){
                     text-align: center;
                     border-radius: 10px;
                     margin-top: 20px;
+                    border: 0px solid;
                 }
                 .submit-code-btn:
               </style>';
@@ -122,11 +124,14 @@ add_filter( 'the_content', function ($content){
                         var count_unit_test = 1;
                         var total = input.length;
                         var pass = 0;
+                        var err = 0;
                         document.getElementsByClassName("submit-code-btn")[0].style.color = "white";
                         if (clicked === 1) {
                             await $( ".submit-result" ).empty();
                             if (source_code != ""){
                                 for (var i=0; i< input.length; i++){
+                                    if (err === 1)
+                                        break;
                                     await $.ajax({
                                               method: "POST",
                                               url: "' . get_site_url() . '/wp-content/plugins/submit-code/api.php",
@@ -139,19 +144,35 @@ add_filter( 'the_content', function ($content){
                                           .done(async function(data) {
                                               var json = JSON.stringify(data);
                                               var dataJson = JSON.parse(json);
+                                              var description = dataJson.status.description;
+                                              var your_ouput = atob(dataJson.stdout);
+                                              var expected_output = output[i];
+                                              var complite_output = atob(dataJson.compile_output);
                                               //console.log(dataJson);
-                                              console.log(dataJson.status.description);
-                                              console.log("Expected output" + output[i]);
-                                              console.log("Your output: ",  atob(dataJson.stdout));
-                                              if (dataJson.status.description === "Accepted") {
+                                              if (description === "Compilation Error"){
+                                                  err = 1;
+                                              }
+                                                  
+                                              if (description === "Accepted") {
                                                   pass++;
-                                                  await $(".submit-result").append("<p class=accepted>"+count_unit_test+". Accepted</p>");
+                                                  await $(".submit-result").append("<p class=accepted>"+count_unit_test+". "+ description +"</p>");
+                                                  
+                                                  console.log(count_unit_test +". "+ description);
+                                                  console.log("Expected output: " + expected_output);
+                                                  console.log("Your output: " + your_ouput);
+                                                  console.log("")    
                                               } else {
-                                                  await $(".submit-result").append("<p class=wrong>"+count_unit_test+". Wrong</p>");
+                                                  await $(".submit-result").append("<p class=wrong>"+count_unit_test+". "+ description +"</p>");
+                                                  
+                                                  console.log(count_unit_test +". "+ description);
+                                                  console.log("Expected output: " + expected_output);
+                                                  console.log("Your output: " +  your_ouput);
+                                                  console.log("Compile Output: " +  String.raw`${complite_output}`);
                                               }
                                           })
                                           .fail(function(jqXHR, textStatus, errorThrown) {
                                               alert( errorThrown );
+                                              err = 1;
                                           });
                                     count_unit_test++;
                                     //console.log("input:" + String.raw`${input[i]}` + "output:" + String.raw`${output[i]}`+";")
@@ -169,6 +190,7 @@ add_filter( 'the_content', function ($content){
         }
         return '';
     } else{
+        $content = mb_substr($content, $pos_start, $content_length - $test_length);
         return $content;
     }
 }, 0);

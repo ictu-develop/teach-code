@@ -1,9 +1,5 @@
 <?php
-echo "<style>
-    #wpadminbar{
-        display: none !important;
-    }
-</style>";
+
 /**
  * The main template file.
  *

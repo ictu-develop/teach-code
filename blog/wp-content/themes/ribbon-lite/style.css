@@ -20,6 +20,20 @@ Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
 
+.site-branding h1, .site-branding h2{
+    font-size: 35px !important;
+}
+
+.primary-navigation{
+    margin: 0 !important;
+}
+#site-header {
+    position: relative;
+    float: left;
+    width: 100%;
+    z-index: 99;
+    padding: 0 !important;
+}
 .tml-links{
     display: none !important;
 }

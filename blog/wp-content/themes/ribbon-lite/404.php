@@ -1,9 +1,5 @@
 <?php
-echo "<style>
-    #wpadminbar{
-        display: none !important;
-    }
-</style>";
+
 /**
  * The template for displaying 404 pages (not found).
  *

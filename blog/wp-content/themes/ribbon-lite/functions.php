@@ -1,4 +1,9 @@
 <?php
+// hidden admin toolbar
+add_filter('show_admin_bar', function (){
+    return false;
+});
+
 /**
  * Ribbon Lite functions and definitions.
  *
