@@ -25,7 +25,8 @@ add_filter( 'the_content', function ($content){
         $pos_start = 0;
         $pos_end = mb_strpos($content, 'start-test');
         $pos_last =  mb_strpos($content, 'end-test');
-        $content_length = strlen($content);
+        $content_length = mb_strlen($content);
+        $test_length = mb_strlen(mb_substr($content, $pos_end));
 
         if ($pos_end == false || $pos_last == false){
             return $content;
@@ -57,7 +58,7 @@ add_filter( 'the_content', function ($content){
             }
         }
         // content string without test caseget_site_urlz
-        $content = mb_substr($content, $pos_start, $pos_end);
+        $content = mb_substr($content, $pos_start, $content_length - $test_length);
         echo '<br>';
         echo '
                <link rel="stylesheet" href="'.get_site_url().'/wp-content/plugins/submit-code/assets/code-editor/theme/material.css">
@@ -124,12 +125,12 @@ add_filter( 'the_content', function ($content){
                         document.getElementsByClassName("submit-code-btn")[0].style.color = "white";
                         if (clicked === 1) {
                             await $( ".submit-result" ).empty();
-                            if (source_code != ""){ 
+                            if (source_code != ""){
                                 for (var i=0; i< input.length; i++){
                                     await $.ajax({
                                               method: "POST",
                                               url: "' . get_site_url() . '/wp-content/plugins/submit-code/api.php",
-                                              data: { 
+                                              data: {
                                                   source: source_code,
                                                   stdin: input[i],
                                                   expected_output:  output[i]
@@ -144,9 +145,9 @@ add_filter( 'the_content', function ($content){
                                               console.log("Your output: ",  atob(dataJson.stdout));
                                               if (dataJson.status.description === "Accepted") {
                                                   pass++;
-                                                  await $(".submit-result").append("<p class=accepted>"+count_unit_test+". Accepted</p>"); 
-                                              } else { 
-                                                  await $(".submit-result").append("<p class=wrong>"+count_unit_test+". Wrong</p>"); 
+                                                  await $(".submit-result").append("<p class=accepted>"+count_unit_test+". Accepted</p>");
+                                              } else {
+                                                  await $(".submit-result").append("<p class=wrong>"+count_unit_test+". Wrong</p>");
                                               }
                                           })
                                           .fail(function(jqXHR, textStatus, errorThrown) {
@@ -154,11 +155,11 @@ add_filter( 'the_content', function ($content){
                                           });
                                     count_unit_test++;
                                     //console.log("input:" + String.raw`${input[i]}` + "output:" + String.raw`${output[i]}`+";")
-                                } 
+                                }
                                 await $(".submit-result").append("<br><br>");
-                                if (pass < total/2) 
+                                if (pass < total/2)
                                     await $(".submit-result").append("<h4 class=Wrong> Passed: "+pass+"/"+total+"</h4>");
-                                else 
+                                else
                                     await $(".submit-result").append("<h4 class=accepted> Passed: "+pass+"/"+total+"</h4>");
                                 clicked = 0;
                             }
@@ -167,6 +168,8 @@ add_filter( 'the_content', function ($content){
               </script>';
         }
         return '';
+    } else{
+        return $content;
     }
 }, 0);
 
