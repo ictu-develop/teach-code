@@ -2,9 +2,52 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7bfa8270-58c6-4169-a4a0-8f1c41419a46" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/web-teach-code.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/web-teach-code.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/admin/assets/images/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/admin/assets/scripts/theme-my-login-admin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/admin/assets/scripts/theme-my-login-admin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/admin/assets/styles/theme-my-login-admin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/admin/assets/styles/theme-my-login-admin.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/admin/class-theme-my-login-admin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/admin/class-theme-my-login-walker-nav-menu-edit.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/admin/extensions.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/admin/functions.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/admin/hooks.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/admin/settings.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/assets/scripts/theme-my-login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/assets/scripts/theme-my-login.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/assets/styles/theme-my-login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/assets/styles/theme-my-login.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/includes/actions.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/includes/class-theme-my-login-action.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/includes/class-theme-my-login-extension.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/includes/class-theme-my-login-form-field.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/includes/class-theme-my-login-form.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/includes/class-theme-my-login-widget.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/includes/class-theme-my-login.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/includes/compat.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/includes/extensions.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/includes/forms.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/includes/functions.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/includes/hooks.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/includes/ms-functions.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/includes/ms-hooks.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/includes/options.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/includes/shortcodes.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/languages/theme-my-login.pot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/theme-my-login.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/wp-content/themes/ribbon-lite/images/ic_user.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/wp-content/plugins/submit-code/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/wp-content/plugins/submit-code/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/wp-content/themes/ribbon-lite/404.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/wp-content/themes/ribbon-lite/404.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/wp-content/themes/ribbon-lite/archive.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/wp-content/themes/ribbon-lite/archive.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/wp-content/themes/ribbon-lite/css/woocommerce2.css" beforeDir="false" afterPath="$PROJECT_DIR$/blog/wp-content/themes/ribbon-lite/css/woocommerce2.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/wp-content/themes/ribbon-lite/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/wp-content/themes/ribbon-lite/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/wp-content/themes/ribbon-lite/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/wp-content/themes/ribbon-lite/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/wp-content/themes/ribbon-lite/page.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/wp-content/themes/ribbon-lite/page.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/wp-content/themes/ribbon-lite/sidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/wp-content/themes/ribbon-lite/sidebar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/wp-content/themes/ribbon-lite/single.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/wp-content/themes/ribbon-lite/single.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/wp-content/themes/ribbon-lite/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/blog/wp-content/themes/ribbon-lite/style.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,58 +58,87 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blog/wp-login.php">
+        <entry file="file://$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/assets/styles/theme-my-login.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="521" column="5" selection-start-line="521" selection-start-column="5" selection-end-line="521" selection-end-column="5" />
+            <state>
+              <caret selection-end-line="2" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/inc/theme-layout-hook.php">
+        <entry file="file://$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/admin/assets/styles/theme-my-login-admin.css">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/ribbon-lite/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="990">
-              <caret line="66" column="47" selection-start-line="66" selection-start-column="47" selection-end-line="66" selection-end-column="47" />
+            <state relative-caret-position="265">
+              <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/includes/forms.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="91" column="30" lean-forward="true" selection-start-line="91" selection-start-column="30" selection-end-line="91" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/includes/class-theme-my-login.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="123">
+              <caret line="288" column="36" lean-forward="true" selection-start-line="288" selection-start-column="36" selection-end-line="288" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/includes/class-theme-my-login-action.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="173">
+              <caret line="20" column="7" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/includes/class-theme-my-login-extension.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="199">
+              <caret line="28" column="21" lean-forward="true" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/includes/class-theme-my-login-form.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="572" column="30" selection-start-line="572" selection-start-column="30" selection-end-line="572" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/blog/wp-content/plugins/submit-code/index.php">
+        <entry file="file://$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/includes/class-theme-my-login-form-field.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-              <folding>
-                <element signature="e#6#236#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="149">
+              <caret line="620" column="175" selection-start-line="620" selection-start-column="175" selection-end-line="620" selection-end-column="175" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blog/wp-content/plugins/submit-code/api.php">
+        <entry file="file://$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/includes/class-theme-my-login-widget.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="70">
-              <caret line="74" column="5" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blog/wp-content/plugins/submit-code/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+            <state relative-caret-position="104">
+              <caret line="171" column="18" selection-start-line="171" selection-start-column="13" selection-end-line="171" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -83,18 +155,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>entry-title</find>
-      <find>border-line-v</find>
-      <find>btn btn-theme</find>
-      <find>row border-line-v</find>
-      <find>wp_login_url</find>
-      <find>$_REQUEST['redirect_to']</find>
-      <find>success</find>
-      <find>setco</find>
-      <find>pwd</find>
-      <find>password</find>
-      <find>log</find>
-      <find>username</find>
       <find>wp_logout</find>
       <find>wp_clear_auth_cookie</find>
       <find>max-w</find>
@@ -113,6 +173,18 @@
       <find>setcookie</find>
       <find>logout</find>
       <find>slimScrollDiv</find>
+      <find>sidebar</find>
+      <find>add_query_arg</find>
+      <find>$goback</find>
+      <find>direct</find>
+      <find>wp-admin</find>
+      <find>Hint: The password should be at least twelve characters long. To make it stronger, use upper and lower case letters, numbers, and symbols like ! &quot; ? $ % ^ &amp; ).</find>
+      <find>The password should be at least twelve characters long</find>
+      <find>title</find>
+      <find>submit</find>
+      <find>Lost your password?</find>
+      <find>login</find>
+      <find>input</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -121,11 +193,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/submit/d.html" />
-        <option value="$PROJECT_DIR$/submit/index.php" />
-        <option value="$PROJECT_DIR$/submit/submit.php" />
-        <option value="$PROJECT_DIR$/submit/index.html" />
-        <option value="$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/header.php" />
         <option value="$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/inc/custom-header.php" />
         <option value="$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/template-parts/content-page.php" />
         <option value="$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/template-parts/content-search.php" />
@@ -150,7 +217,6 @@
         <option value="$PROJECT_DIR$/blog/wp-login.php" />
         <option value="$PROJECT_DIR$/submit/Submit.php" />
         <option value="$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/assets/layout.css" />
-        <option value="$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/inc/theme-layout-hook.php" />
         <option value="$PROJECT_DIR$/blog/wp-content/plugins/submit-code/api.php" />
         <option value="$PROJECT_DIR$/blog/wp-content/plugins/submit-code/CodeSubmit.php" />
         <option value="$PROJECT_DIR$/blog/wp-content/plugins/submit-code/assets/code-editor/lib/codemirror.css" />
@@ -159,6 +225,25 @@
         <option value="$PROJECT_DIR$/blog/wp-content/plugins/submit-code/style.css" />
         <option value="$PROJECT_DIR$/blog/README.MD" />
         <option value="$PROJECT_DIR$/blog/wp-content/plugins/submit-code/index.php" />
+        <option value="$PROJECT_DIR$/blog/wp-content/themes/ribbon-lite/single.php" />
+        <option value="$PROJECT_DIR$/blog/wp-content/themes/ribbon-lite/404.php" />
+        <option value="$PROJECT_DIR$/blog/wp-content/themes/ribbon-lite/archive.php" />
+        <option value="$PROJECT_DIR$/blog/wp-content/themes/ribbon-lite/header.php" />
+        <option value="$PROJECT_DIR$/blog/wp-content/themes/ribbon-lite/index.php" />
+        <option value="$PROJECT_DIR$/blog/wp-content/themes/ribbon-lite/page.php" />
+        <option value="$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/inc/theme-layout-hook.php" />
+        <option value="$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/admin/functions.php" />
+        <option value="$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/admin/settings.php" />
+        <option value="$PROJECT_DIR$/blog/wp-content/themes/ribbon-lite/sidebar.php" />
+        <option value="$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/includes/extensions.php" />
+        <option value="$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/includes/class-theme-my-login.php" />
+        <option value="$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/includes/actions.php" />
+        <option value="$PROJECT_DIR$/blog/wp-content/themes/ribbon-lite/css/woocommerce2.css" />
+        <option value="$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/assets/styles/theme-my-login.css" />
+        <option value="$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/admin/assets/styles/theme-my-login-admin.css" />
+        <option value="$PROJECT_DIR$/blog/wp-content/themes/ribbon-lite/style.css" />
+        <option value="$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/includes/forms.php" />
+        <option value="$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/includes/class-theme-my-login-form-field.php" />
       </list>
     </option>
   </component>
@@ -206,22 +291,16 @@
               <item name="blog" type="462c0819:PsiDirectoryNode" />
               <item name="wp-content" type="462c0819:PsiDirectoryNode" />
               <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="submit-code" type="462c0819:PsiDirectoryNode" />
+              <item name="theme-my-login" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="web-teach-code" type="b2602c69:ProjectViewProjectNode" />
               <item name="web-teach-code" type="462c0819:PsiDirectoryNode" />
               <item name="blog" type="462c0819:PsiDirectoryNode" />
               <item name="wp-content" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web-teach-code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web-teach-code" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="my-vcard-resume" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+              <item name="theme-my-login" type="462c0819:PsiDirectoryNode" />
+              <item name="includes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="web-teach-code" type="b2602c69:ProjectViewProjectNode" />
@@ -244,12 +323,14 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/blog/wp-content/plugins/submit-code/assets/code-editor" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/blog" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/blog/wp-content/plugins" />
+      <recent name="$PROJECT_DIR$/blog/wp-content/themes/ribbon-lite/images" />
+      <recent name="$PROJECT_DIR$/blog/wp-content/plugins/submit-code/assets/code-editor" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -280,12 +361,12 @@
       <workItem from="1543825049066" duration="8359000" />
       <workItem from="1543909839081" duration="67594000" />
       <workItem from="1544019546891" duration="4522000" />
-      <workItem from="1544366726076" duration="1823000" />
+      <workItem from="1544366726076" duration="10402000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97920000" />
+    <option name="totallyTimeSpent" value="106499000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="10" y="62" width="1346" height="686" extended-state="0" />
@@ -327,310 +408,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/submit/d.html" />
-    <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="155" column="54" selection-start-line="155" selection-start-column="48" selection-end-line="155" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/readme.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1210" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/screenshot.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/sidebar.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/inc/customizer/customizer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/inc/customizer/core/control.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-799">
-          <caret line="13" column="16" lean-forward="true" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="e#6#274#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/template-parts/content-page.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="54" column="9" lean-forward="true" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/template-parts/content-search.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="13" column="4" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/comments.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1179">
-          <caret line="88" column="15" lean-forward="true" selection-start-line="88" selection-start-column="15" selection-end-line="88" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/search.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/wp-includes/pluggable.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="972" column="55" selection-start-line="972" selection-start-column="55" selection-end-line="972" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/archive.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/404.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-115">
-          <caret line="50" column="24" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/inc/template-functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="32" column="39" lean-forward="true" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/page.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/wp-content/plugins/submit-code/README.MD">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="60">
-            <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/wp-includes/post-template.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="243" selection-start-line="243" selection-end-line="243" />
-          <folding>
-            <element signature="e#6#153#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/wp-content/plugins/submit-code/assets/code-editor/addon/edit/closetag.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/wp-content/plugins/submit-code/source.php" />
-    <entry file="file://$PROJECT_DIR$/blog/wp-content/plugins/submit-code/assets/js/admin.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/wp-content/plugins/submit-code/assets/code-editor/addon/runmode/runmode-standalone.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/wp-includes/link-template.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="3010" column="9" selection-start-line="3010" selection-start-column="9" selection-end-line="3010" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/submit/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="50" column="11" lean-forward="true" selection-start-line="50" selection-start-column="11" selection-end-line="50" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/single.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="45" column="18" lean-forward="true" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/template-parts/content-single.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="39" column="17" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/inc/post-hooks.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="18" column="2" lean-forward="true" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/inc/kirki.config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="123" column="15" lean-forward="true" selection-start-line="123" selection-start-column="15" selection-end-line="123" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/inc/function-hook.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="157" column="26" lean-forward="true" selection-start-line="157" selection-start-column="26" selection-end-line="157" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/inc/custom-header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/template-parts/content.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="31" column="41" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/template-parts/content-none.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="21" column="32" lean-forward="true" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="65" column="12" lean-forward="true" selection-start-line="65" selection-start-column="12" selection-end-line="65" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/assets/common.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/wp-config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="27" column="30" lean-forward="true" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/assets/layout.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="35" column="29" lean-forward="true" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/submit/Submit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="93" column="25" selection-start-line="93" selection-start-column="25" selection-end-line="93" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/wp-content/plugins/submit-code/assets/code-editor/theme/material.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" selection-end-line="7" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/wp-content/plugins/submit-code/assets/code-editor/lib/codemirror.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/README.MD">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="135">
-            <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/inc/theme-layout-hook.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
-          <caret line="66" column="47" selection-start-line="66" selection-start-column="47" selection-end-line="66" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/wp-content/plugins/submit-code/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/wp-login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="521" column="5" selection-start-line="521" selection-start-column="5" selection-end-line="521" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blog/wp-content/plugins/submit-code/api.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="70">
@@ -640,11 +417,338 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/blog/wp-content/plugins/submit-code/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="210">
+          <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
           <folding>
             <element signature="e#6#236#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/ribbon-lite/single.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/ribbon-lite/footer.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/ribbon-lite/functions.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/ribbon-lite/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/ribbon-lite/page.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/ribbon-lite/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/ribbon-lite/inc/customizer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="46" column="43" selection-start-line="46" selection-start-column="36" selection-end-line="46" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-335">
+          <caret line="65" column="12" lean-forward="true" selection-start-line="65" selection-start-column="12" selection-end-line="65" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/single.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-121">
+          <caret line="45" column="18" lean-forward="true" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/ribbon-lite/archive.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="35" column="21" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/ribbon-lite/404.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="27" column="21" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/inc/theme-layout-hook.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="59" column="37" selection-start-line="59" selection-start-column="37" selection-end-line="59" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/admin/assets/images/logo.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/my-vcard-resume/sidebar.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/ribbon-lite/sidebar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="75" column="45" lean-forward="true" selection-start-line="75" selection-start-column="45" selection-end-line="75" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/includes/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-761">
+          <caret line="13" column="2" lean-forward="true" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/includes/extensions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="29" column="57" selection-start-line="29" selection-start-column="57" selection-end-line="29" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/includes/compat.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/assets/scripts/theme-my-login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/admin/assets/scripts/theme-my-login-admin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/wp-content/plugins/hello.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/wp-content/plugins/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="676" column="42" selection-start-line="676" selection-start-column="37" selection-end-line="676" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/includes/shortcodes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="33" column="26" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/includes/ms-hooks.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/includes/ms-functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="16" column="34" lean-forward="true" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+          <folding>
+            <element signature="n#style#0;n#br#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/includes/hooks.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/admin/settings.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="475" column="20" selection-start-line="475" selection-start-column="14" selection-end-line="475" selection-end-column="20" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/admin/hooks.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="31" column="9" lean-forward="true" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/includes/options.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="194" column="68" selection-start-line="194" selection-start-column="63" selection-end-line="194" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/admin/class-theme-my-login-admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1745">
+          <caret line="25" column="6" lean-forward="true" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/admin/class-theme-my-login-walker-nav-menu-edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="44" column="40" lean-forward="true" selection-start-line="44" selection-start-column="40" selection-end-line="44" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/admin/extensions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-806">
+          <caret line="40" column="31" lean-forward="true" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/admin/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="398" column="88" selection-start-line="398" selection-start-column="83" selection-end-line="398" selection-end-column="88" />
+          <folding>
+            <element signature="e#7#103#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/includes/actions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="52" column="8" lean-forward="true" selection-start-line="44" selection-start-column="4" selection-end-line="52" selection-end-column="8" />
+          <folding>
+            <element signature="e#7#102#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/ribbon-lite/css/woocommerce2.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/ribbon-lite/css/addons.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/assets/styles/theme-my-login.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="2" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/admin/assets/styles/theme-my-login-admin.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/theme-my-login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="94" column="26" selection-start-line="94" selection-start-column="21" selection-end-line="94" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/wp-content/themes/ribbon-lite/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/includes/forms.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="91" column="30" lean-forward="true" selection-start-line="91" selection-start-column="30" selection-end-line="91" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/includes/class-theme-my-login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="288" column="36" lean-forward="true" selection-start-line="288" selection-start-column="36" selection-end-line="288" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/includes/class-theme-my-login-action.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="20" column="7" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/includes/class-theme-my-login-extension.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="28" column="21" lean-forward="true" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/includes/class-theme-my-login-form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="572" column="30" selection-start-line="572" selection-start-column="30" selection-end-line="572" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/includes/class-theme-my-login-widget.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="171" column="18" selection-start-line="171" selection-start-column="13" selection-end-line="171" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/wp-content/plugins/theme-my-login/includes/class-theme-my-login-form-field.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="620" column="175" selection-start-line="620" selection-start-column="175" selection-end-line="620" selection-end-column="175" />
         </state>
       </provider>
     </entry>
