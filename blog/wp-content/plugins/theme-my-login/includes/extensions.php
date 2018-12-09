@@ -27,7 +27,7 @@ function tml_register_extension( $extension, $args = array() ) {
 	return theme_my_login()->register_extension( $extension );
 }
 
-/**The password should be at least twelve characters long
+/**
  * Unregister an extension.
  *
  * @since 7.0
