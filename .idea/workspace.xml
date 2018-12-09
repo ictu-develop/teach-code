@@ -37,19 +37,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blog/wp-content/languages/wp-4.9.x-vi.mo">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/blog/wp-settings.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
+            <state relative-caret-position="-16">
               <caret line="104" column="13" lean-forward="true" selection-start-line="104" selection-start-column="13" selection-end-line="104" selection-end-column="13" />
             </state>
           </provider>
@@ -242,13 +233,6 @@
               <item name="web-teach-code" type="b2602c69:ProjectViewProjectNode" />
               <item name="web-teach-code" type="462c0819:PsiDirectoryNode" />
               <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
-              <item name="languages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web-teach-code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web-teach-code" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
               <item name="wp-includes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -311,15 +295,15 @@
       <workItem from="1543825049066" duration="8359000" />
       <workItem from="1543909839081" duration="67594000" />
       <workItem from="1544019546891" duration="4522000" />
-      <workItem from="1544366726076" duration="12091000" />
+      <workItem from="1544366726076" duration="12847000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108188000" />
+    <option name="totallyTimeSpent" value="108944000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="10" y="62" width="1346" height="686" extended-state="1" />
+    <frame x="10" y="62" width="1346" height="686" extended-state="0" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4974359" visible="true" weight="0.27307692" />
       <window_info id="Structure" order="1" sideWeight="0.50256413" side_tool="true" weight="0.26923078" />
@@ -696,7 +680,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/blog/wp-settings.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
+        <state relative-caret-position="-16">
           <caret line="104" column="13" lean-forward="true" selection-start-line="104" selection-start-column="13" selection-end-line="104" selection-end-column="13" />
         </state>
       </provider>

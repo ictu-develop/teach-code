@@ -9,7 +9,11 @@
 <h4>The sum of two numbers a and b:</h4>
 
  <h5>Write a testcase<h5>
- <pre>input: 2\n3 output: 5 ;</pre>
+ <pre> 
+ start-test
+ input: 2\n3 output: 5 ;
+ end-test
+ </pre>
  <h5>Write more testcase<h5>
  <pre>
  start-test
