@@ -149,33 +149,31 @@ class Submit
                                               var your_ouput = atob(dataJson.stdout);
                                               var expected_output = output[i];
                                               //console.log(dataJson);
-                                              if (description === "Compilation Error"){
+                                              if (description !== "Accepted" && description !== "Wrong Answer"){
                                                   err = 1;
+                                                  await $(".submit-result").append("<p class=wrong>"+ description +"</p>");
                                               }
+                                              
+                                              console.log(count_unit_test +". "+ description);
+                                              console.log("Test: " + input[i]);
+                                              console.log("Expected output: " + expected_output);
+                                              console.log("Your output: " + your_ouput);
+                                              console.log("")    
                                                   
                                               if (description === "Accepted") {
                                                   pass++;
-                                                  await $(".submit-result").append("<p class=accepted>"+count_unit_test+". "+ description +"</p>");
-                                                  
-                                                  console.log(count_unit_test +". "+ description);
-                                                  console.log("Expected output: " + expected_output);
-                                                  console.log("Your output: " + your_ouput);
-                                                  console.log("")    
-                                              } else {
-                                                  
-                                                  console.log(count_unit_test +". "+ description);
-                                                  console.log("Expected output: " + expected_output);
-                                                  console.log("Your output: " +  your_ouput);
+                                                  await $(".submit-result").append("<p class=accepted>"+count_unit_test+". "+ description +"</p>");                                                                              
+                                              } else {                                               
                                                   if (description === "Compilation Error"){
                                                     var complite_output = b64DecodeUnicode(dataJson.compile_output);
                                                     console.log("Compile Output: " +  String.raw`${complite_output}`);
-                                                    await $(".submit-result").append("<p class=wrong>"+ description +"</p>");
                                                     await $(".submit-result").append("<p class=compilation_error>"+complite_output +"</p>");
                                                   } 
                                                   if (description === "Wrong Answer"){
                                                     await $(".submit-result").append("<p class=wrong>"+count_unit_test+". "+ description +"</p>");
-                                                    await $(".submit-result").append("<p class=wrong_detail> Your Output: "+your_ouput +"</p>");
+                                                    await $(".submit-result").append("<p class=wrong_detail> Test: "+input[i] +"</p>");
                                                     await $(".submit-result").append("<p class=wrong_detail> Expected Output: "+expected_output +"</p>");
+                                                    await $(".submit-result").append("<p class=wrong_detail> Your Output: "+your_ouput +"</p>");
                                                   } 
                                               }
                                           })
