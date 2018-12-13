@@ -14,64 +14,19 @@
 /*
  * Plugin constants
  */
-if(!defined('CODE_SUBMIT_URL'))
-    define('FEEDIER_URL', plugin_dir_url( __FILE__ ));
-if(!defined('CODE_SUBMIT_PATH'))
-    define('FEEDIER_PATH', plugin_dir_path( __FILE__ ));
+if (!defined('CODE_SUBMIT_URL'))
+    define('FEEDIER_URL', plugin_dir_url(__FILE__));
+if (!defined('CODE_SUBMIT_PATH'))
+    define('FEEDIER_PATH', plugin_dir_path(__FILE__));
 
-add_filter( 'the_content', function ($content){
-    // init post, length
-    $pos_start = 0;
-    $pos_end = mb_strpos($content, 'start-test');
-    $pos_last =  mb_strpos($content, 'end-test');
-    $content_length = mb_strlen($content);
-    $test_length = mb_strlen(mb_substr($content, $pos_end));
-
-    if ($pos_end == false || $pos_last == false){
-        return $content;
-    }
-
-    if (is_single()) {
-
-        // test case string
-        $test_case = mb_substr($content, $pos_end + strlen('start-test'), $content_length - strlen(' end-test'));
-        //echo $test_case;
-        $test_case = str_split($test_case);
-        $line = (string)'';
-        $test_case_array = [];
-        foreach ($test_case as $char) {
-            if ($char != ';') {
-                $line .= (string)$char;
-            }
-            if ($char == ';') {
-                $line .= ';';
-                $line = trim($line);
-                $pos_input = mb_strpos($line, 'input:');
-                $pos_output = mb_strpos($line, 'output:');
-                $input = mb_substr($line, $pos_input + strlen('input:') + 1, $pos_output - strlen('output:') - 1);
-                $output = mb_substr($line, $pos_output + strlen('output:') + 1, strlen($line) - strlen($input) - strlen('output:') - strlen('input:') - 5);
-                if ($input != '' && $output != '') {
-                    //echo '<br>' . $input . ' : ' . $output;
-                    //echo '<br>' . $line;
-                    $test_case_array[] = new TestCase($input, $output);
-                }
-                $line = '';
-            }
-        }
-        // content string without test caseget_site_urlz
-        $content = mb_substr($content, $pos_start, $content_length - $test_length);
-        echo '<br>';
-        echo '
-               <link rel="stylesheet" href="'.get_site_url().'/wp-content/plugins/submit-code/assets/code-editor/theme/material.css">
-               <link rel="stylesheet" href="'.get_site_url().'/wp-content/plugins/submit-code/assets/code-editor/lib/codemirror.css">
-               <script src="'.get_site_url().'/wp-content/plugins/submit-code/assets/code-editor/lib/codemirror.js"></script>
-               <script src="'.get_site_url().'/wp-content/plugins/submit-code/assets/code-editor/mode/javascript/javascript.js"></script>
-               <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+echo '<link rel="stylesheet" href="' . get_site_url() . '/wp-content/plugins/submit-code/assets/code-editor/theme/material.css">
+      <link rel="stylesheet" href="' . get_site_url() . '/wp-content/plugins/submit-code/assets/code-editor/lib/codemirror.css">
+      <script src="' . get_site_url() . '/wp-content/plugins/submit-code/assets/code-editor/lib/codemirror.js"></script>
+      <script src="' . get_site_url() . '/wp-content/plugins/submit-code/assets/code-editor/mode/javascript/javascript.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
             ';
-        echo $content;
-        if (is_user_logged_in()) {
-            echo '<br>';
-            echo '<style>
+
+echo '<style>
                 .accepted{
                     font-weight: bold;
                     color: green;
@@ -98,21 +53,94 @@ add_filter( 'the_content', function ($content){
                 }
                 .submit-code-btn:
               </style>';
-            echo '<textarea id="code-editor" name="source" required></textarea>';
-            echo '<button onclick="submit_code()" class="submit-code-btn">Submit</button>';
-            echo '<p></p>';
-            echo '<div class="submit-result">
+
+class Submit
+{
+
+    private $test_case_array = [];
+
+    function addFilter()
+    {
+        add_filter('the_content', function ($content) {
+            // init post, length
+            $pos_start = 0;
+            $pos_end = mb_strpos($content, 'start-test');
+            $pos_last = mb_strpos($content, 'end-test');
+            $content_length = mb_strlen($content);
+            $test_length = mb_strlen(mb_substr($content, $pos_end));
+
+            if ($pos_end == false || $pos_last == false) {
+                return $content;
+            }
+
+            if (is_single()) {
+                $new_content = "";
+                // test case string
+                $test_case = mb_substr($content, $pos_end + strlen('start-test'), $content_length - strlen(' end-test'));
+                //echo $test_case;
+                $test_case = str_split($test_case);
+                $line = (string)'';
+                foreach ($test_case as $char) {
+                    if ($char != ';') {
+                        $line .= (string)$char;
+                    }
+                    if ($char == ';') {
+                        $line .= ';';
+                        $line = trim($line);
+                        $pos_input = mb_strpos($line, 'input:');
+                        $pos_output = mb_strpos($line, 'output:');
+                        $input = mb_substr($line, $pos_input + strlen('input:') + 1, $pos_output - strlen('output:') - 1);
+                        $output = mb_substr($line, $pos_output + strlen('output:') + 1, strlen($line) - strlen($input) - strlen('output:') - strlen('input:') - 5);
+                        if ($input != '' && $output != '') {
+                            //echo '<br>' . $input . ' : ' . $output;
+                            //echo '<br>' . $line;
+                            $this->test_case_array[] = new TestCase($input, $output);
+                        }
+                        $line = '';
+                    }
+                }
+                // content string without test caseget_site_urlz
+                $content = mb_substr($content, $pos_start, $content_length - $test_length);
+                echo '<br>';
+                $new_content .= $content;
+                if (is_user_logged_in()) {
+                    return $new_content;
+                } else {
+                    return $new_content;
+                }
+            } else {
+                $content = mb_substr($content, $pos_start, $content_length - $test_length);
+                return $content;
+            }
+        }, 0);
+
+    }
+
+    function addFilter2()
+    {
+        add_filter('the_content', function ($content) {
+
+            if (empty($this->test_case_array)) {
+                return $content;
+            }
+            echo $content;
+            if (is_single() && is_user_logged_in()) {
+                echo '<br>';
+                echo '<textarea id="code-editor" name="source" required></textarea>';
+                echo '<button onclick="submit_code()" class="submit-code-btn">Submit</button>';
+                echo '<p></p>';
+                echo '<div class="submit-result">
                    </div>';
-            echo '<script>
+                echo '<script>
                     var clicked = 0;
                     var input = new Array();
                     var output = new Array();
                     </script>';
-            foreach ($test_case_array as $value){
-                echo '<script> input.push("'.$value->input.'") </script>';
-                echo '<script> output.push("'.$value->output.'") </script>';
-            }
-            echo '<script>
+                foreach ($this->test_case_array as $value) {
+                    echo '<script> input.push("' . $value->input . '") </script>';
+                    echo '<script> output.push("' . $value->output . '") </script>';
+                }
+                echo '<script>
                     var myCodeMirror = CodeMirror.fromTextArea(document.getElementById("code-editor"), {
                                             lineNumbers: true,
                                              theme: "material"
@@ -187,18 +215,18 @@ add_filter( 'the_content', function ($content){
                         }
                     }
               </script>';
-        }
-        return '';
-    } else{
-        $content = mb_substr($content, $pos_start, $content_length - $test_length);
-        return $content;
+            } else{
+                return '';
+            }
+        });
     }
-}, 0);
 
+}
 
-class TestCase{
+class TestCase
+{
     public $input;
-    public  $output;
+    public $output;
 
     function __construct($input, $output)
     {
@@ -206,3 +234,7 @@ class TestCase{
         $this->output = $output;
     }
 }
+
+$obj = new Submit();
+$obj->addFilter();
+$obj->addFilter2();
