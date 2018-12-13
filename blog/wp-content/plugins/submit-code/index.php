@@ -19,40 +19,7 @@ if (!defined('CODE_SUBMIT_URL'))
 if (!defined('CODE_SUBMIT_PATH'))
     define('FEEDIER_PATH', plugin_dir_path(__FILE__));
 
-echo '<link rel="stylesheet" href="' . get_site_url() . '/wp-content/plugins/submit-code/assets/code-editor/theme/material.css">
-      <link rel="stylesheet" href="' . get_site_url() . '/wp-content/plugins/submit-code/assets/code-editor/lib/codemirror.css">
-      <script src="' . get_site_url() . '/wp-content/plugins/submit-code/assets/code-editor/lib/codemirror.js"></script>
-      <script src="' . get_site_url() . '/wp-content/plugins/submit-code/assets/code-editor/mode/javascript/javascript.js"></script>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-            ';
-
-echo '<style>
-                .accepted{
-                    font-weight: bold;
-                    color: green;
-                    height: 0px;
-                }
-                .wrong{
-                    font-weight: bold;
-                    color: red;
-                    height: 0px;
-                }
-                .CodeMirror{
-                border: 3px solid #263238;
-                    border-radius: 10px;
-                }
-                .submit-code-btn{
-                    background: #263238;
-                    color: white;
-                    width: 80px;
-                    height: 40px;
-                    text-align: center;
-                    border-radius: 10px;
-                    margin-top: 20px;
-                    border: 0px solid;
-                }
-                .submit-code-btn:
-              </style>';
+require 'style.php';
 
 class Submit
 {
@@ -101,7 +68,6 @@ class Submit
                 }
                 // content string without test caseget_site_urlz
                 $content = mb_substr($content, $pos_start, $content_length - $test_length);
-                echo '<br>';
                 $new_content .= $content;
                 if (is_user_logged_in()) {
                     return $new_content;
@@ -125,7 +91,6 @@ class Submit
             }
             echo $content;
             if (is_single() && is_user_logged_in()) {
-                echo '<br>';
                 echo '<textarea id="code-editor" name="source" required></textarea>';
                 echo '<button onclick="submit_code()" class="submit-code-btn">Submit</button>';
                 echo '<p></p>';
@@ -143,8 +108,16 @@ class Submit
                 echo '<script>
                     var myCodeMirror = CodeMirror.fromTextArea(document.getElementById("code-editor"), {
                                             lineNumbers: true,
-                                             theme: "material"
+                                            theme: "material"
                                           });
+                    
+                    function b64DecodeUnicode(str) {
+                            // Going backwards: from bytestream, to percent-encoding, to original string.
+                        return decodeURIComponent(atob(str).split(\'\').map(function(c) {
+                                return \'%\' + (\'00\' + c.charCodeAt(0).toString(16)).slice(-2);
+                            }).join(\'\'));
+                    }
+                    
                     async function submit_code() {
                         var source_code = myCodeMirror.getValue()
                         if (source_code != "")
@@ -175,7 +148,6 @@ class Submit
                                               var description = dataJson.status.description;
                                               var your_ouput = atob(dataJson.stdout);
                                               var expected_output = output[i];
-                                              var complite_output = atob(dataJson.compile_output);
                                               //console.log(dataJson);
                                               if (description === "Compilation Error"){
                                                   err = 1;
@@ -190,12 +162,21 @@ class Submit
                                                   console.log("Your output: " + your_ouput);
                                                   console.log("")    
                                               } else {
-                                                  await $(".submit-result").append("<p class=wrong>"+count_unit_test+". "+ description +"</p>");
                                                   
                                                   console.log(count_unit_test +". "+ description);
                                                   console.log("Expected output: " + expected_output);
                                                   console.log("Your output: " +  your_ouput);
-                                                  console.log("Compile Output: " +  String.raw`${complite_output}`);
+                                                  if (description === "Compilation Error"){
+                                                    var complite_output = b64DecodeUnicode(dataJson.compile_output);
+                                                    console.log("Compile Output: " +  String.raw`${complite_output}`);
+                                                    await $(".submit-result").append("<p class=wrong>"+ description +"</p>");
+                                                    await $(".submit-result").append("<p class=compilation_error>"+complite_output +"</p>");
+                                                  } 
+                                                  if (description === "Wrong Answer"){
+                                                    await $(".submit-result").append("<p class=wrong>"+count_unit_test+". "+ description +"</p>");
+                                                    await $(".submit-result").append("<p class=wrong_detail> Your Output: "+your_ouput +"</p>");
+                                                    await $(".submit-result").append("<p class=wrong_detail> Expected Output: "+expected_output +"</p>");
+                                                  } 
                                               }
                                           })
                                           .fail(function(jqXHR, textStatus, errorThrown) {
@@ -210,6 +191,7 @@ class Submit
                                     await $(".submit-result").append("<h4 class=Wrong> Passed: "+pass+"/"+total+"</h4>");
                                 else
                                     await $(".submit-result").append("<h4 class=accepted> Passed: "+pass+"/"+total+"</h4>");
+                                
                                 clicked = 0;
                             }
                         }
