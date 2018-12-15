@@ -19,8 +19,6 @@ if (!defined('CODE_SUBMIT_URL'))
 if (!defined('CODE_SUBMIT_PATH'))
     define('FEEDIER_PATH', plugin_dir_path(__FILE__));
 
-require 'style.php';
-
 class Submit
 {
 
@@ -41,6 +39,7 @@ class Submit
             }
 
             if (is_single()) {
+                require 'style.php';
                 $new_content = "";
                 // test case string
                 $test_case = mb_substr($content, $pos_end + strlen('start-test'), $content_length - strlen(' end-test'));
@@ -70,6 +69,7 @@ class Submit
                 $content = mb_substr($content, $pos_start, $content_length - $test_length);
                 $new_content .= $content;
                 if (is_user_logged_in()) {
+
                     return $new_content;
                 } else {
                     return $new_content;
@@ -112,7 +112,6 @@ class Submit
                                           });
                     
                     function b64DecodeUnicode(str) {
-                            // Going backwards: from bytestream, to percent-encoding, to original string.
                         return decodeURIComponent(atob(str).split(\'\').map(function(c) {
                                 return \'%\' + (\'00\' + c.charCodeAt(0).toString(16)).slice(-2);
                             }).join(\'\'));

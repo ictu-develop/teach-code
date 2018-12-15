@@ -82,5 +82,3 @@ $source = $_POST['source'];
 $obj = new Submit();
 
 $obj->submissions($source, base64_encode($stdin), base64_encode($expected_output));
-//
-//$obj->submissions($_POST['source'], base64_encode("2\n3"), base64_encode(5));
