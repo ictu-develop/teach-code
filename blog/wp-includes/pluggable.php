@@ -972,6 +972,9 @@ function wp_clear_auth_cookie() {
 	setcookie( 'wp-postpass_' . COOKIEHASH, ' ', time() - YEAR_IN_SECONDS, COOKIEPATH, COOKIE_DOMAIN );
     setcookie('username', $_POST['log'], time()- 100000, COOKIEPATH, COOKIE_DOMAIN, $secure);
 
+    //Custom cookie
+    setcookie("lang_id", "", time() - 86400 * 365, '/');
+
 }
 endif;
 

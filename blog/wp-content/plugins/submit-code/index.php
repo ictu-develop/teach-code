@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name:       Submit Code
- * Description:       Submit your code (Tester)
+ * Description:       Submit your code (I'm Tester)
  * Version:           1.0.0
  * Author:            IndieTeam
  * Author URI:
@@ -23,6 +23,7 @@ class Submit
 {
 
     private $test_case_array = [];
+    private $lang_id = ['C (gcc 7.2.0)' => 4, 'C++ (g++ 7.2.0)' => 10, 'Java (JDK 9)' => 26, 'Go (1.9)' => 22, 'Python (3.6.0)' => 34];
 
     function addFilter()
     {
@@ -92,19 +93,29 @@ class Submit
             echo $content;
             if (is_single() && is_user_logged_in()) {
                 echo '<textarea id="code-editor" name="source" required></textarea>';
+                echo '<select name="lang_id" class="lang_id">';
+                foreach ($this->lang_id as $lang_name => $lang_id){
+                    if ($_COOKIE['lang_id'] == $lang_id)
+                        echo '<option value="'.$lang_id.'" selected>'.$lang_name.'</option>';
+                    else
+                        echo '<option value="'.$lang_id.'">'.$lang_name.'</option>';
+                }
+                echo '</select>';
                 echo '<button onclick="submit_code()" class="submit-code-btn">Submit</button>';
                 echo '<p></p>';
-                echo '<div class="submit-result">
-                   </div>';
+                echo '<div class="submit-result"></div>';
+
                 echo '<script>
-                    var clicked = 0;
-                    var input = new Array();
-                    var output = new Array();
-                    </script>';
+                            var clicked = 0;
+                            var input = new Array();
+                            var output = new Array();
+                        </script>';
+
                 foreach ($this->test_case_array as $value) {
                     echo '<script> input.push("' . $value->input . '") </script>';
                     echo '<script> output.push("' . $value->output . '") </script>';
                 }
+
                 echo '<script>
                     var myCodeMirror = CodeMirror.fromTextArea(document.getElementById("code-editor"), {
                                             lineNumbers: true,
@@ -125,20 +136,25 @@ class Submit
                         var total = input.length;
                         var pass = 0;
                         var err = 0;
-                        document.getElementsByClassName("submit-code-btn")[0].style.color = "white";
+                        await $(".submit-code-btn").css("color: while")
+                        await $(".submit-code-btn").prop("", "wait...")
+                        var lang_id = await $(".lang_id").find(":selected").val();
+                        
                         if (clicked === 1) {
                             await $( ".submit-result" ).empty();
                             if (source_code != ""){
                                 for (var i=0; i< input.length; i++){
-                                    if (err === 1)
+                                    if (err === 1){
                                         break;
+                                    }
                                     await $.ajax({
                                               method: "POST",
                                               url: "' . get_site_url() . '/wp-content/plugins/submit-code/api.php",
                                               data: {
                                                   source: source_code,
                                                   stdin: input[i],
-                                                  expected_output:  output[i]
+                                                  expected_output:  output[i],
+                                                  lang_id: lang_id
                                                }
                                             })
                                           .done(async function(data) {
@@ -147,17 +163,11 @@ class Submit
                                               var description = dataJson.status.description;
                                               var your_ouput = atob(dataJson.stdout);
                                               var expected_output = output[i];
-                                              //console.log(dataJson);
+                                              console.log(dataJson);
                                               if (description !== "Accepted" && description !== "Wrong Answer"){
                                                   err = 1;
                                                   await $(".submit-result").append("<p class=wrong>"+ description +"</p>");
-                                              }
-                                              
-                                              console.log(count_unit_test +". "+ description);
-                                              console.log("Test: " + input[i]);
-                                              console.log("Expected output: " + expected_output);
-                                              console.log("Your output: " + your_ouput);
-                                              console.log("")    
+                                              }                                 
                                                   
                                               if (description === "Accepted") {
                                                   pass++;
@@ -165,7 +175,6 @@ class Submit
                                               } else {                                               
                                                   if (description === "Compilation Error"){
                                                     var complite_output = b64DecodeUnicode(dataJson.compile_output);
-                                                    console.log("Compile Output: " +  String.raw`${complite_output}`);
                                                     await $(".submit-result").append("<p class=compilation_error>"+complite_output +"</p>");
                                                   } 
                                                   if (description === "Wrong Answer"){
@@ -177,11 +186,11 @@ class Submit
                                               }
                                           })
                                           .fail(function(jqXHR, textStatus, errorThrown) {
-                                              alert( errorThrown );
+                                              alert("Lỗi");
                                               err = 1;
+                                              clicked = 0;
                                           });
                                     count_unit_test++;
-                                    //console.log("input:" + String.raw`${input[i]}` + "output:" + String.raw`${output[i]}`+";")
                                 }
                                 await $(".submit-result").append("<br><br>");
                                 if (pass < total/2)
