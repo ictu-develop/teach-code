@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7bfa8270-58c6-4169-a4a0-8f1c41419a46" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/wp-content/plugins/submit-code/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/wp-content/plugins/submit-code/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/wp-content/plugins/submit-code/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/wp-content/plugins/submit-code/index.php" afterDir="false" />
-    </list>
+    <list default="true" id="7bfa8270-58c6-4169-a4a0-8f1c41419a46" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,7 +13,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/blog/wp-content/plugins/submit-code/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="463">
+            <state relative-caret-position="118">
               <caret line="114" selection-start-line="114" selection-end-line="114" />
               <folding>
                 <element signature="e#6#236#0#PHP" expanded="true" />
@@ -190,21 +186,6 @@
             <path>
               <item name="web-teach-code" type="b2602c69:ProjectViewProjectNode" />
               <item name="web-teach-code" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web-teach-code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web-teach-code" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="submit-code" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web-teach-code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web-teach-code" type="462c0819:PsiDirectoryNode" />
               <item name="submit" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -269,16 +250,15 @@
       <workItem from="1544694684453" duration="12001000" />
       <workItem from="1544684862612" duration="7285000" />
       <workItem from="1544711177610" duration="1608000" />
-      <workItem from="1544853151412" duration="2399000" />
+      <workItem from="1544853151412" duration="3039000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="141406000" />
+    <option name="totallyTimeSpent" value="142046000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="41" width="1368" height="700" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4965035" visible="true" weight="0.28517398" />
       <window_info id="Structure" order="1" sideWeight="0.5034965" side_tool="true" weight="0.27231467" />
@@ -293,7 +273,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49923077" weight="0.2937063" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49923077" visible="true" weight="0.2937063" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50076926" side_tool="true" weight="0.30107528" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -651,7 +631,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/blog/wp-content/plugins/submit-code/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
+        <state relative-caret-position="118">
           <caret line="114" selection-start-line="114" selection-end-line="114" />
           <folding>
             <element signature="e#6#236#0#PHP" expanded="true" />
