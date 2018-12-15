@@ -65,7 +65,7 @@ class Submit
                         $line = '';
                     }
                 }
-                // content string without test caseget_site_urlz
+                // content string without test case
                 $content = mb_substr($content, $pos_start, $content_length - $test_length);
                 $new_content .= $content;
                 if (is_user_logged_in()) {
