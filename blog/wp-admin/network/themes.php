@@ -158,9 +158,9 @@ if ( $action ) {
 						wp_nonce_field( 'bulk-themes' );
 
 						if ( 1 == $themes_to_delete ) {
-							submit_button( __( 'Yes, delete this theme' ), '', 'submit', false );
+							submit_button( __( 'Yes, delete this theme' ), '', 'SubmitCode', false );
 						} else {
-							submit_button( __( 'Yes, delete these themes' ), '', 'submit', false );
+							submit_button( __( 'Yes, delete these themes' ), '', 'SubmitCode', false );
 						}
 					?>
 				</form>
@@ -168,7 +168,7 @@ if ( $action ) {
 				$referer = wp_get_referer();
 				?>
 				<form method="post" action="<?php echo $referer ? esc_url( $referer ) : ''; ?>" style="display:inline;">
-					<?php submit_button( __( 'No, return me to the theme list' ), '', 'submit', false ); ?>
+					<?php submit_button( __( 'No, return me to the theme list' ), '', 'SubmitCode', false ); ?>
 				</form>
 			</div>
 				<?php

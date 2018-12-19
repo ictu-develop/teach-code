@@ -224,7 +224,7 @@ switch($step) {
 	</table>
 	<?php if ( isset( $_GET['noapi'] ) ) { ?><input name="noapi" type="hidden" value="1" /><?php } ?>
 	<input type="hidden" name="language" value="<?php echo esc_attr( $language ); ?>" />
-	<p class="step"><input name="submit" type="submit" value="<?php echo htmlspecialchars( __( 'Submit' ), ENT_QUOTES ); ?>" class="button button-large" /></p>
+	<p class="step"><input name="submit" type="submit" value="<?php echo htmlspecialchars( __('SubmitCode'), ENT_QUOTES ); ?>" class="button button-large" /></p>
 </form>
 <?php
 	break;

@@ -223,7 +223,7 @@ require_once( ABSPATH . 'wp-admin/admin-header.php' );
 
 						wp_nonce_field( 'set-privacy-page' );
 
-						submit_button( __( 'Use This Page' ), 'primary', 'submit', false, array( 'id' => 'set-page' ) );
+						submit_button( __( 'Use This Page' ), 'primary', 'SubmitCode', false, array( 'id' => 'set-page' ) );
 						?>
 					</form>
 				<?php endif; ?>
@@ -242,7 +242,7 @@ require_once( ABSPATH . 'wp-admin/admin-header.php' );
 					<?php
 					wp_nonce_field( 'create-privacy-page' );
 
-					submit_button( __( 'Create New Page' ), 'primary', 'submit', false, array( 'id' => 'create-page' ) );
+					submit_button( __( 'Create New Page' ), 'primary', 'SubmitCode', false, array( 'id' => 'create-page' ) );
 					?>
 				</form>
 			</td>

@@ -100,7 +100,7 @@ class Submit
 
 }
 
-$obj = new Submit();
+$obj = new SubmitCode();
 //$obj->authenticate();
 //echo '<br>';
 //

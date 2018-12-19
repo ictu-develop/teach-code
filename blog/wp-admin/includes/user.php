@@ -775,7 +775,7 @@ function _wp_personal_data_export_page() {
 			<div class="wp-privacy-request-form-field">
 				<label for="username_or_email_for_privacy_request"><?php esc_html_e( 'Username or email address' ); ?></label>
 				<input type="text" required class="regular-text" id="username_or_email_for_privacy_request" name="username_or_email_for_privacy_request" />
-				<?php submit_button( __( 'Send Request' ), 'secondary', 'submit', false ); ?>
+				<?php submit_button( __( 'Send Request' ), 'secondary', 'SubmitCode', false ); ?>
 			</div>
 			<?php wp_nonce_field( 'personal-data-request' ); ?>
 			<input type="hidden" name="action" value="add_export_personal_data_request" />
@@ -848,7 +848,7 @@ function _wp_personal_data_removal_page() {
 			<div class="wp-privacy-request-form-field">
 				<label for="username_or_email_for_privacy_request"><?php esc_html_e( 'Username or email address' ); ?></label>
 				<input type="text" required class="regular-text" id="username_or_email_for_privacy_request" name="username_or_email_for_privacy_request" />
-				<?php submit_button( __( 'Send Request' ), 'secondary', 'submit', false ); ?>
+				<?php submit_button( __( 'Send Request' ), 'secondary', 'SubmitCode', false ); ?>
 			</div>
 			<?php wp_nonce_field( 'personal-data-request' ); ?>
 			<input type="hidden" name="action" value="add_remove_personal_data_request" />

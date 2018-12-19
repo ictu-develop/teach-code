@@ -207,7 +207,7 @@ function _wp_dashboard_control_callback( $dashboard, $meta_box ) {
 	wp_dashboard_trigger_widget_control( $meta_box['id'] );
 	wp_nonce_field( 'edit-dashboard-widget_' . $meta_box['id'], 'dashboard-widget-nonce' );
 	echo '<input type="hidden" name="widget_id" value="' . esc_attr($meta_box['id']) . '" />';
-	submit_button( __('Submit') );
+	submit_button( __('SubmitCode') );
 	echo '</form>';
 }
 
@@ -1193,7 +1193,7 @@ function wp_print_community_events_markup() {
 				?>
 				<input id="community-events-location" class="regular-text" type="text" name="community-events-location" placeholder="<?php esc_attr_e( 'Cincinnati' ); ?>" />
 
-				<?php submit_button( __( 'Submit' ), 'secondary', 'community-events-submit', false ); ?>
+				<?php submit_button( __('SubmitCode'), 'secondary', 'community-events-submit', false ); ?>
 
 				<button class="community-events-cancel button-link" type="button" aria-expanded="false">
 					<?php _e( 'Cancel' ); ?>

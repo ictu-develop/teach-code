@@ -218,7 +218,7 @@ foreach ( wp_get_themes( array( 'errors' => null ) ) as $a_stylesheet => $a_them
 }
 ?>
 		</select>
-		<?php submit_button( __( 'Select' ), '', 'Submit', false ); ?>
+		<?php submit_button( __( 'Select' ), '', 'SubmitCode', false ); ?>
 	</form>
 </div>
 <br class="clear" />
@@ -284,7 +284,7 @@ else : ?>
 		</div>
 	<?php if ( is_writeable( $file ) ) : ?>
 		<p class="submit">
-			<?php submit_button( __( 'Update File' ), 'primary', 'submit', false ); ?>
+			<?php submit_button( __( 'Update File' ), 'primary', 'SubmitCode', false ); ?>
 			<span class="spinner"></span>
 		</p>
 	<?php else : ?>

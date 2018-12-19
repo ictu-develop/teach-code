@@ -221,7 +221,7 @@ if ( $comment->comment_approved != '0' ) { // if not unapproved
 <form action="comment.php" method="get" class="comment-ays-submit">
 
 <p>
-	<?php submit_button( $button, 'primary', 'submit', false ); ?>
+	<?php submit_button( $button, 'primary', 'SubmitCode', false ); ?>
 	<a href="<?php echo admin_url('edit-comments.php'); ?>" class="button-cancel"><?php esc_html_e( 'Cancel' ); ?></a>
 </p>
 

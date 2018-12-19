@@ -300,7 +300,7 @@ printf( __( 'If you like, you may enter custom structures for your category and 
   </form>
 <?php if ( !is_multisite() ) { ?>
 <?php if ( $iis7_permalinks ) :
-	if ( isset($_POST['submit']) && $permalink_structure && ! $using_index_permalinks && ! $writable ) :
+	if ( isset($_POST['SubmitCode']) && $permalink_structure && ! $using_index_permalinks && ! $writable ) :
 		if ( file_exists($home_path . 'web.config') ) : ?>
 <p><?php
 	printf(

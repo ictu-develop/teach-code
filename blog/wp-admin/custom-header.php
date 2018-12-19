@@ -572,7 +572,7 @@ class Custom_Image_Header {
 		<input type="file" id="upload" name="import" />
 		<input type="hidden" name="action" value="save" />
 		<?php wp_nonce_field( 'custom-header-upload', '_wpnonce-custom-header-upload' ); ?>
-		<?php submit_button( __( 'Upload' ), '', 'submit', false ); ?>
+		<?php submit_button( __( 'Upload' ), '', 'SubmitCode', false ); ?>
 	</p>
 	<?php
 		$modal_update_href = esc_url( add_query_arg( array(
@@ -816,7 +816,7 @@ wp_nonce_field( 'custom-header-options', '_wpnonce-custom-header-options' ); ?>
 	<?php wp_nonce_field( 'custom-header-crop-image' ) ?>
 
 	<p class="submit">
-	<?php submit_button( __( 'Crop and Publish' ), 'primary', 'submit', false ); ?>
+	<?php submit_button( __( 'Crop and Publish' ), 'primary', 'SubmitCode', false ); ?>
 	<?php
 	if ( isset( $oitar ) && 1 == $oitar && ( current_theme_supports( 'custom-header', 'flex-height' ) || current_theme_supports( 'custom-header', 'flex-width' ) ) )
 		submit_button( __( 'Skip Cropping, Publish Image as Is' ), '', 'skip-cropping', false );

@@ -328,7 +328,7 @@ function network_step1( $errors = false ) {
 				</td>
 			</tr>
 		</table>
-		<?php submit_button( __( 'Install' ), 'primary', 'submit' ); ?>
+		<?php submit_button( __( 'Install' ), 'primary', 'SubmitCode'); ?>
 	</form>
 	<?php
 }

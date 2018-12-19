@@ -224,7 +224,7 @@ if ( 'POST' === $_SERVER['REQUEST_METHOD'] ) {
 	}
 ?>
 		</select>
-		<?php submit_button( __( 'Select' ), '', 'Submit', false ); ?>
+		<?php submit_button( __( 'Select' ), '', 'SubmitCode', false ); ?>
 	</form>
 </div>
 <br class="clear" />
@@ -269,7 +269,7 @@ if ( 'POST' === $_SERVER['REQUEST_METHOD'] ) {
 		<?php } ?>
 	</div>
 	<p class="submit">
-		<?php submit_button( __( 'Update File' ), 'primary', 'submit', false ); ?>
+		<?php submit_button( __( 'Update File' ), 'primary', 'SubmitCode', false ); ?>
 		<span class="spinner"></span>
 	</p>
 <?php else : ?>

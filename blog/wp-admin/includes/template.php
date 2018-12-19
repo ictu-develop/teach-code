@@ -1966,7 +1966,7 @@ function compression_test() {
  *                                       as a string such as 'tabindex="1"', though the array format is
  *                                       preferred. Default null.
  */
-function submit_button( $text = null, $type = 'primary', $name = 'submit', $wrap = true, $other_attributes = null ) {
+function submit_button($text = null, $type = 'primary', $name = 'SubmitCode', $wrap = true, $other_attributes = null ) {
 	echo get_submit_button( $text, $type, $name, $wrap, $other_attributes );
 }
 
@@ -1991,7 +1991,7 @@ function submit_button( $text = null, $type = 'primary', $name = 'submit', $wrap
  *                                       Default empty.
  * @return string Submit button HTML.
  */
-function get_submit_button( $text = '', $type = 'primary large', $name = 'submit', $wrap = true, $other_attributes = '' ) {
+function get_submit_button($text = '', $type = 'primary large', $name = 'SubmitCode', $wrap = true, $other_attributes = '' ) {
 	if ( ! is_array( $type ) )
 		$type = explode( ' ', $type );
 
