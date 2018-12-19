@@ -202,7 +202,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="10" />
     <option name="y" value="62" />
     <option name="width" value="1346" />
@@ -238,32 +238,6 @@
               <item name="blog" type="462c0819:PsiDirectoryNode" />
               <item name="wp-content" type="462c0819:PsiDirectoryNode" />
               <item name="plugins" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web-teach-code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web-teach-code" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="submit-code" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web-teach-code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web-teach-code" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="submit-code" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web-teach-code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web-teach-code" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="submit-code" type="462c0819:PsiDirectoryNode" />
-              <item name="request" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="web-teach-code" type="b2602c69:ProjectViewProjectNode" />
@@ -351,12 +325,12 @@
       <workItem from="1544962118348" duration="36506000" />
       <workItem from="1545102268171" duration="654000" />
       <workItem from="1545182357773" duration="3275000" />
-      <workItem from="1545186617415" duration="6626000" />
+      <workItem from="1545186617415" duration="7700000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="212874000" />
+    <option name="totallyTimeSpent" value="213948000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="42" width="1366" height="698" extended-state="6" />
